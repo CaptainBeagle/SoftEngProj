@@ -1,4 +1,7 @@
-﻿namespace SoftEngProj
+﻿using System.Runtime.CompilerServices;
+using System.Threading;
+
+namespace SoftEngProj
 {
     partial class View
     {
@@ -19,7 +22,7 @@
             }
             base.Dispose(disposing);
         }
-
+        
         #region Windows Form Designer generated code
 
         /// <summary>
@@ -42,6 +45,7 @@
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.ImeMode = System.Windows.Forms.ImeMode.On;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(48, 224);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -151,14 +155,13 @@
             this.Name = "View";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calendar";
+            this.Load += new System.EventHandler(this.View_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label1;
@@ -168,6 +171,8 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        public System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        
     }
 }
 

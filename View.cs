@@ -15,9 +15,10 @@ namespace SoftEngProj
         public View()
         {
             InitializeComponent();
+            this.Load += View_Load;
         }
 
-        private void View_Load(object sneder, EventArgs e)
+        public void View_Load(object sneder, EventArgs e)
         {
             displayDays();
         }
@@ -34,7 +35,11 @@ namespace SoftEngProj
 
             //convert startofmonth to int
             int dayofweek = Convert.ToInt32(startofmonth.DayOfWeek.ToString("d")) + 1;
-            for(int i = 1; i < dayofweek; i++)
+            if (dayofweek == 0)
+            {
+                dayofweek = 7;
+            }
+            for (int i = 1; i < dayofweek; i++)
             {
                 UserControlBlank ucblank = new UserControlBlank();
                 flowLayoutPanel1.Controls.Add(ucblank);
