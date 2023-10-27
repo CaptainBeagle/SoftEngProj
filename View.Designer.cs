@@ -160,6 +160,7 @@ namespace SoftEngProj
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1444, 881);
             this.Controls.Add(this.lbYear);
             this.Controls.Add(this.lbMonth);
