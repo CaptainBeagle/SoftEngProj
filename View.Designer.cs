@@ -41,6 +41,8 @@ namespace SoftEngProj
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.lbMonth = new System.Windows.Forms.Label();
+            this.lbYear = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -61,6 +63,7 @@ namespace SoftEngProj
             this.button1.TabIndex = 1;
             this.button1.Text = ">";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -70,6 +73,7 @@ namespace SoftEngProj
             this.button2.TabIndex = 2;
             this.button2.Text = "<";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label1
             // 
@@ -115,7 +119,6 @@ namespace SoftEngProj
             this.label5.Size = new System.Drawing.Size(102, 25);
             this.label5.TabIndex = 7;
             this.label5.Text = "Thursday";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 
@@ -125,7 +128,6 @@ namespace SoftEngProj
             this.label6.Size = new System.Drawing.Size(72, 25);
             this.label6.TabIndex = 8;
             this.label6.Text = "Friday";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label7
             // 
@@ -136,11 +138,31 @@ namespace SoftEngProj
             this.label7.TabIndex = 9;
             this.label7.Text = "Saturday";
             // 
+            // lbMonth
+            // 
+            this.lbMonth.AutoSize = true;
+            this.lbMonth.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMonth.Location = new System.Drawing.Point(76, 55);
+            this.lbMonth.Name = "lbMonth";
+            this.lbMonth.Size = new System.Drawing.Size(0, 61);
+            this.lbMonth.TabIndex = 10;
+            // 
+            // lbYear
+            // 
+            this.lbYear.AutoSize = true;
+            this.lbYear.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbYear.Location = new System.Drawing.Point(486, 55);
+            this.lbYear.Name = "lbYear";
+            this.lbYear.Size = new System.Drawing.Size(0, 61);
+            this.lbYear.TabIndex = 11;
+            // 
             // View
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1444, 881);
+            this.Controls.Add(this.lbYear);
+            this.Controls.Add(this.lbMonth);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -172,7 +194,8 @@ namespace SoftEngProj
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         public System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        
+        private System.Windows.Forms.Label lbMonth;
+        private System.Windows.Forms.Label lbYear;
     }
 }
 

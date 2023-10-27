@@ -12,6 +12,9 @@ namespace SoftEngProj
 {
     public partial class View : Form
     {
+        static DateTime now = DateTime.Now;
+        int Month = now.Month;
+        int Year = now.Year;
         public View()
         {
             InitializeComponent();
@@ -25,13 +28,14 @@ namespace SoftEngProj
         
         public void displayDays()
         {
-            DateTime now = DateTime.Now;
+            lbYear.Text = Year.ToString("");
+            getMonth(Month);
             
             //Get first day of month
-            DateTime startofmonth = new DateTime(now.Year,now.Month,1);
+            DateTime startofmonth = new DateTime(Year,Month,1);
 
             //Get number of days in the month
-            int days = DateTime.DaysInMonth(now.Year,now.Month);
+            int days = DateTime.DaysInMonth(Year,Month);
 
             //convert startofmonth to int
             int dayofweek = Convert.ToInt32(startofmonth.DayOfWeek.ToString("d") + 1);
@@ -51,6 +55,60 @@ namespace SoftEngProj
                 ucDays.Days(i);
                 flowLayoutPanel1.Controls.Add(ucDays);
             }
+
+        }
+
+        public void getMonth(int M)
+        {
+            //getMonth changes what month label says based on the inputed value
+            if (M == 1)
+            {
+                lbMonth.Text = "January";
+            }
+            else if (M == 2)
+            {
+                lbMonth.Text = "February";
+            }
+            else if (M == 3)
+            {
+                lbMonth.Text = "March";
+            }
+            else if (M == 4)
+            {
+                lbMonth.Text = "April";
+            }
+            else if (M == 5)
+            {
+                lbMonth.Text = "May";
+            }
+            else if (M == 6)
+            {
+                lbMonth.Text = "June";
+            }
+            else if (M == 7)
+            {
+                lbMonth.Text = "July";
+            }
+            else if (M == 8)
+            {
+                lbMonth.Text = "August";
+            }
+            else if (M == 9)
+            {
+                lbMonth.Text = "September";
+            }
+            else if (M == 10)
+            {
+                lbMonth.Text = "October";
+            }
+            else if (M == 11)
+            {
+                lbMonth.Text = "November";
+            }
+            else if (M == 12)
+            {
+                lbMonth.Text = "December";
+            }
         }
 
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
@@ -58,14 +116,34 @@ namespace SoftEngProj
             
         }
 
-        private void label5_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-
+            if ((Month + 1) > 12)
+            {
+                Month = 1;
+                Year += 1;
+                displayDays();
+            }
+            else
+            {
+                Month += 1;
+                displayDays();
+            }
         }
 
-        private void label6_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-
+            if ((Month - 1) < 1)
+            {
+                Month = 12;
+                Year -= 1;
+                displayDays();
+            }
+            else
+            {
+                Month -= 1;
+                displayDays();
+            }
         }
     }
 }
