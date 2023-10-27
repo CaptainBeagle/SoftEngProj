@@ -34,7 +34,7 @@ namespace SoftEngProj
             int days = DateTime.DaysInMonth(now.Year,now.Month);
 
             //convert startofmonth to int
-            int dayofweek = Convert.ToInt32(startofmonth.DayOfWeek.ToString("d")) + 1;
+            int dayofweek = Convert.ToInt32(startofmonth.DayOfWeek.ToString("d") + 1);
             if (dayofweek == 0)
             {
                 dayofweek = 7;
@@ -43,6 +43,13 @@ namespace SoftEngProj
             {
                 UserControlBlank ucblank = new UserControlBlank();
                 flowLayoutPanel1.Controls.Add(ucblank);
+            }
+
+            for(int i = 1; i <= days; i++) 
+            { 
+                UserControlDays ucDays = new UserControlDays();
+                ucDays.Days(i);
+                flowLayoutPanel1.Controls.Add(ucDays);
             }
         }
 
