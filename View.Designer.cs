@@ -51,7 +51,7 @@ namespace SoftEngProj
             this.flowLayoutPanel1.Location = new System.Drawing.Point(48, 224);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1366, 375);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1366, 497);
             this.flowLayoutPanel1.TabIndex = 0;
             this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 

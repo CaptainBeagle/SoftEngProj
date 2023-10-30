@@ -31,6 +31,9 @@ namespace SoftEngProj
             lbYear.Text = Year.ToString("");
             getMonth(Month);
             
+            //You have to clear the container of any old data before putting new data in
+            flowLayoutPanel1.Controls.Clear();
+            
             //Get first day of month
             DateTime startofmonth = new DateTime(Year,Month,1);
 
@@ -38,11 +41,7 @@ namespace SoftEngProj
             int days = DateTime.DaysInMonth(Year,Month);
 
             //convert startofmonth to int
-            int dayofweek = Convert.ToInt32(startofmonth.DayOfWeek.ToString("d") + 1);
-            if (dayofweek == 0)
-            {
-                dayofweek = 7;
-            }
+            int dayofweek = Convert.ToInt32(startofmonth.DayOfWeek.ToString("d")) + 1;
             for (int i = 1; i < dayofweek; i++)
             {
                 UserControlBlank ucblank = new UserControlBlank();
@@ -121,12 +120,12 @@ namespace SoftEngProj
             if ((Month + 1) > 12)
             {
                 Month = 1;
-                Year += 1;
+                Year ++;
                 displayDays();
             }
             else
             {
-                Month += 1;
+                Month ++;
                 displayDays();
             }
         }
