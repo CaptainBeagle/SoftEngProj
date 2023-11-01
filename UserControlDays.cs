@@ -16,14 +16,16 @@ namespace SoftEngProj
         {
             InitializeComponent();
         }
-
-        private void UserControlDays_Load_1(object sender, EventArgs e)
-        {
-
-        }
+        
         public void Days(int numday)
         {
             lbdays.Text = numday + "";
+        }
+
+        private void UserControlDays_Click(object sender, EventArgs e)
+        {
+            EventView ef = new EventView();
+            ef.Show();
         }
     }
 }

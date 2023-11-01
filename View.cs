@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,6 +16,7 @@ namespace SoftEngProj
         static DateTime now = DateTime.Now;
         int Month = now.Month;
         int Year = now.Year;
+        new readonly bool IsMdiContainer = true;
         public View()
         {
             InitializeComponent();
@@ -25,20 +27,20 @@ namespace SoftEngProj
         {
             displayDays();
         }
-        
+
         public void displayDays()
         {
             lbYear.Text = Year.ToString("");
             getMonth(Month);
-            
+
             //You have to clear the container of any old data before putting new data in
             flowLayoutPanel1.Controls.Clear();
-            
+
             //Get first day of month
-            DateTime startofmonth = new DateTime(Year,Month,1);
+            DateTime startofmonth = new DateTime(Year, Month, 1);
 
             //Get number of days in the month
-            int days = DateTime.DaysInMonth(Year,Month);
+            int days = DateTime.DaysInMonth(Year, Month);
 
             //convert startofmonth to int
             int dayofweek = Convert.ToInt32(startofmonth.DayOfWeek.ToString("d")) + 1;
@@ -48,8 +50,8 @@ namespace SoftEngProj
                 flowLayoutPanel1.Controls.Add(ucblank);
             }
 
-            for(int i = 1; i <= days; i++) 
-            { 
+            for (int i = 1; i <= days; i++)
+            {
                 UserControlDays ucDays = new UserControlDays();
                 ucDays.Days(i);
                 flowLayoutPanel1.Controls.Add(ucDays);
@@ -112,7 +114,7 @@ namespace SoftEngProj
 
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
-            
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -120,12 +122,12 @@ namespace SoftEngProj
             if ((Month + 1) > 12)
             {
                 Month = 1;
-                Year ++;
+                Year++;
                 displayDays();
             }
             else
             {
-                Month ++;
+                Month++;
                 displayDays();
             }
         }
@@ -144,5 +146,6 @@ namespace SoftEngProj
                 displayDays();
             }
         }
+
     }
 }
