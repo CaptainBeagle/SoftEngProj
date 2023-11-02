@@ -22,6 +22,7 @@ namespace SoftEngProj
         private void EventView_Load(object sender, EventArgs e)
         {
             DateLb.Text = CurrentMonth + "  " + CurrentDay + "  " + CurrentYear;
+            //ToDo: EventView UI
             //ToDo: Event creation and display
         }
     }
