@@ -33,6 +33,9 @@ namespace SoftEngProj
             lbYear.Text = Year.ToString("");
             getMonth(Month);
 
+            EventView.CurrentMonth = lbMonth.Text;
+            EventView.CurrentYear = lbYear.Text;
+
             //You have to clear the container of any old data before putting new data in
             flowLayoutPanel1.Controls.Clear();
 

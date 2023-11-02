@@ -28,7 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.DateLb = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // DateLb
+            // 
+            this.DateLb.AutoSize = true;
+            this.DateLb.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DateLb.Location = new System.Drawing.Point(65, 35);
+            this.DateLb.Name = "DateLb";
+            this.DateLb.Size = new System.Drawing.Size(0, 51);
+            this.DateLb.TabIndex = 0;
             // 
             // EventView
             // 
@@ -36,14 +46,18 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1444, 881);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Controls.Add(this.DateLb);
             this.Name = "EventView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EventView";
+            this.Load += new System.EventHandler(this.EventView_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Label DateLb;
     }
 }

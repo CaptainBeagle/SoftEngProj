@@ -24,6 +24,7 @@ namespace SoftEngProj
 
         private void UserControlDays_Click(object sender, EventArgs e)
         {
+            EventView.CurrentDay = lbdays.Text;
             EventView ef = new EventView();
             ef.Show();
         }
