@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EventClass.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EventClass.Designer.cs">
+      <DependentUpon>EventClass.cs</DependentUpon>
+    </Compile>
     <Compile Include="EventView.cs">
       <SubType>Form</SubType>
     </Compile>
