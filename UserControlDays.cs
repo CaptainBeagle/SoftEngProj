@@ -12,6 +12,7 @@ namespace SoftEngProj
 {
     public partial class UserControlDays : UserControl
     {
+        readonly bool IsMdiContainer = true;
         public UserControlDays()
         {
             InitializeComponent();

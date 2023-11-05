@@ -8,6 +8,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace SoftEngProj
 {
@@ -24,6 +25,13 @@ namespace SoftEngProj
             DateLb.Text = CurrentMonth + "  " + CurrentDay + "  " + CurrentYear;
             //ToDo: EventView UI (You can use the "Toolbox" menue in "EventView.cs [Design]" to add UI elements)
             //ToDo: Event creation and display
+        }
+
+        public void AddEvent(string Ename, string Elocation, string Ecategory, int Estarttime, int Eendtime, string repeatability, string reminders)
+        {
+            //Call this method when "save" button is clicked to add the inputed info to the Model
+            UCModel uCModel = new UCModel(Ename, Elocation, Ecategory, Estarttime, Eendtime, repeatability, reminders);
+
         }
     }
 }

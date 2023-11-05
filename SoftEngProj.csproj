@@ -46,17 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EventClass.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="EventClass.Designer.cs">
-      <DependentUpon>EventClass.cs</DependentUpon>
-    </Compile>
     <Compile Include="EventView.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="EventView.Designer.cs">
       <DependentUpon>EventView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCModel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCModel.Designer.cs">
+      <DependentUpon>UCModel.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControlBlank.cs">
       <SubType>UserControl</SubType>
