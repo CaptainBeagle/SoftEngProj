@@ -12,7 +12,6 @@ namespace SoftEngProj
 {
     public partial class UserControlDays : UserControl
     {
-        readonly bool IsMdiContainer = true;
         public UserControlDays()
         {
             InitializeComponent();
@@ -21,6 +20,7 @@ namespace SoftEngProj
         public void Days(int numday)
         {
             lbdays.Text = numday + "";
+            //if the EventView corresponding to this day contains an instance of UCModel, make color not white and still stand out. If not, make color white.
         }
 
         private void UserControlDays_Click(object sender, EventArgs e)

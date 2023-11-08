@@ -81,6 +81,9 @@
     <EmbeddedResource Include="EventView.resx">
       <DependentUpon>EventView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UCModel.resx">
+      <DependentUpon>UCModel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControlBlank.resx">
       <DependentUpon>UserControlBlank.cs</DependentUpon>
     </EmbeddedResource>

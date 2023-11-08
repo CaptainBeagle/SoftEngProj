@@ -16,7 +16,7 @@ namespace SoftEngProj
         static DateTime now = DateTime.Now;
         int Month = now.Month;
         int Year = now.Year;
-        new readonly bool IsMdiContainer = true;
+
         public View()
         {
             InitializeComponent();

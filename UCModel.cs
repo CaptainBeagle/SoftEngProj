@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace SoftEngProj
 {
@@ -15,7 +16,14 @@ namespace SoftEngProj
         public UCModel(string Ename, string Elocation, string Ecategory, int Estarttime, int Eendtime, string repeatability, string reminders)
         {
             InitializeComponent();
+            Namelb.Text = Ename;
+            Catlb.Text = Ecategory;
+            Locationlb.Text = Elocation;
         }
-        //ToDo: Create Labels, Add method to get info inputed by user to text of labels, and have it display appropriately in EventView of appropriate date.
+
+        private void UCModel_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
