@@ -19,6 +19,8 @@ namespace SoftEngProj
             Namelb.Text = Ename;
             Catlb.Text = Ecategory;
             Locationlb.Text = Elocation;
+            //Repeatability and reminders are set based on user input/drop down box and used to determine if the user will be notified of this event
+            //and if the event will be repeated or not
         }
 
         private void UCModel_Load(object sender, EventArgs e)
