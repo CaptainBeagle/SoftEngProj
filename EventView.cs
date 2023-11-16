@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,8 +23,38 @@ namespace SoftEngProj
          
         private void EventView_Load(object sender, EventArgs e)
         {
-            //If statement to change display order based on setting in settings menue
-            DateLb.Text = CurrentMonth + "  " + CurrentDay + "  " + CurrentYear;
+            //if statement to change display theme based on setting in settings menu
+            if (View.theme == 0)
+            {
+                this.BackColor = SystemColors.Menu;
+                DateLb.ForeColor = SystemColors.ControlText;
+            }
+            else if (View.theme == 1)
+            {
+                this.BackColor = SystemColors.ControlText;
+                DateLb.ForeColor = SystemColors.Control;
+            }
+            else if (View.theme == 2)
+            {
+
+            }
+            else if (View.theme == 3)
+            {
+
+            }
+            else if (View.theme == 4)
+            {
+
+            }
+            //If statement to change display order based on setting in settings menu
+            if(ComponentModel.dateorder == true)
+            {
+                DateLb.Text = CurrentDay + " " + CurrentMonth + " " + CurrentYear;
+            }
+            else
+            {
+                DateLb.Text = CurrentMonth + "  " + CurrentDay + "  " + CurrentYear;
+            }
             //ToDo: EventView UI (You can use the "Toolbox" menue in "EventView.cs [Design]" to add UI elements)
             //ToDo: Event creation and display
             if (CurrentDay == "16")

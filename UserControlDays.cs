@@ -20,7 +20,29 @@ namespace SoftEngProj
         public void Days(int numday)
         {
             lbdays.Text = numday + "";
-            //if the EventView corresponding to this day contains an instance of UCModel, make color not white and still stand out. If not, make color white.
+            //if the EventView corresponding to this day contains an instance of UCModel, make color not standard and still stand out. If not, make color standard.
+            if (View.theme == 0)
+            {
+                this.BackColor = SystemColors.Window;
+                lbdays.ForeColor = SystemColors.WindowText;
+            }
+            else if (View.theme == 1)
+            {
+                this.BackColor = SystemColors.ControlDarkDark;
+                lbdays.ForeColor = SystemColors.Control;
+            }
+            else if (View.theme == 2)
+            {
+
+            }
+            else if (View.theme == 3)
+            {
+
+            }
+            else if (View.theme == 4)
+            {
+
+            }
         }
 
         private void UserControlDays_Click(object sender, EventArgs e)

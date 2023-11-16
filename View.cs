@@ -16,7 +16,7 @@ namespace SoftEngProj
         static DateTime now = DateTime.Now;
         int Month = now.Month;
         int Year = now.Year;
-        public static int theme = 0;
+        public static int theme = ComponentModel.savetheme;
 
         public View()
         {
@@ -38,11 +38,29 @@ namespace SoftEngProj
             //Code that changes theme
             if(theme == 0)
             {
-
+                this.BackColor = SystemColors.Menu;
+                lbMonth.ForeColor = SystemColors.ControlText; 
+                lbYear.ForeColor = SystemColors.ControlText;
+                label1.ForeColor = SystemColors.ControlText;
+                label2.ForeColor = SystemColors.ControlText;
+                label3.ForeColor = SystemColors.ControlText;
+                label4.ForeColor = SystemColors.ControlText;
+                label5.ForeColor = SystemColors.ControlText;
+                label6.ForeColor = SystemColors.ControlText;
+                label7.ForeColor = SystemColors.ControlText;
             }
             else if(theme == 1) 
             {
-                
+                this.BackColor = SystemColors.ControlText;
+                lbMonth.ForeColor = SystemColors.Control;
+                lbYear.ForeColor = SystemColors.Control;
+                label1.ForeColor = SystemColors.Control;
+                label2.ForeColor = SystemColors.Control;
+                label3.ForeColor = SystemColors.Control;
+                label4.ForeColor = SystemColors.Control;
+                label5.ForeColor = SystemColors.Control;
+                label6.ForeColor = SystemColors.Control;
+                label7.ForeColor = SystemColors.Control;
             }
             else if (theme == 2)
             {
@@ -82,6 +100,10 @@ namespace SoftEngProj
                 UserControlDays ucDays = new UserControlDays();
                 ucDays.Days(i);
                 flowLayoutPanel1.Controls.Add(ucDays);
+            }
+            if(ComponentModel.tips == true)
+            {
+
             }
 
         }
@@ -178,6 +200,7 @@ namespace SoftEngProj
         {
             SettingView sv = new SettingView();
             sv.Show();
+            
         }
     }
 }
