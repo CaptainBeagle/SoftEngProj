@@ -16,11 +16,13 @@ namespace SoftEngProj
         static DateTime now = DateTime.Now;
         int Month = now.Month;
         int Year = now.Year;
+        public static int theme = 0;
 
         public View()
         {
             InitializeComponent();
             this.Load += View_Load;
+            
         }
 
         public void View_Load(object sneder, EventArgs e)
@@ -32,6 +34,28 @@ namespace SoftEngProj
         {
             lbYear.Text = Year.ToString("");
             getMonth(Month);
+
+            //Code that changes theme
+            if(theme == 0)
+            {
+
+            }
+            else if(theme == 1) 
+            {
+                
+            }
+            else if (theme == 2)
+            {
+
+            }
+            else if (theme == 3)
+            {
+
+            }
+            else if (theme == 4)
+            {
+
+            }
 
             EventView.CurrentMonth = lbMonth.Text;
             EventView.CurrentYear = lbYear.Text;
@@ -150,5 +174,10 @@ namespace SoftEngProj
             }
         }
 
+        private void SetButton_Click(object sender, EventArgs e)
+        {
+            SettingView sv = new SettingView();
+            sv.Show();
+        }
     }
 }

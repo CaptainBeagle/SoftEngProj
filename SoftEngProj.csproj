@@ -52,6 +52,12 @@
     <Compile Include="EventView.Designer.cs">
       <DependentUpon>EventView.cs</DependentUpon>
     </Compile>
+    <Compile Include="SettingView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingView.Designer.cs">
+      <DependentUpon>SettingView.cs</DependentUpon>
+    </Compile>
     <Compile Include="UCModel.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -80,6 +86,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="EventView.resx">
       <DependentUpon>EventView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingView.resx">
+      <DependentUpon>SettingView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UCModel.resx">
       <DependentUpon>UCModel.cs</DependentUpon>
