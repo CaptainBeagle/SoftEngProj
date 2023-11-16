@@ -56,6 +56,9 @@ namespace SoftEngProj
                 DateLb.Text = CurrentMonth + "  " + CurrentDay + "  " + CurrentYear;
             }
             //ToDo: EventView UI (You can use the "Toolbox" menue in "EventView.cs [Design]" to add UI elements)
+            //  Add labels for each hour
+            //  Add flowlayout pannels with 30 min increment width
+            //  Create add/edit menu and connect to AddEvent function
             //ToDo: Event creation and display
             if (CurrentDay == "16")
             {

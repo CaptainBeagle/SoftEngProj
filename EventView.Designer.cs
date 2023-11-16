@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.DateLb = new System.Windows.Forms.Label();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
             // 
             // DateLb
@@ -40,12 +41,20 @@
             this.DateLb.Size = new System.Drawing.Size(0, 51);
             this.DateLb.TabIndex = 0;
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(133, 35);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(551, 260);
+            this.flowLayoutPanel1.TabIndex = 1;
+            // 
             // EventView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1444, 881);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.DateLb);
             this.Name = "EventView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -59,5 +68,6 @@
         #endregion
 
         private System.Windows.Forms.Label DateLb;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }
