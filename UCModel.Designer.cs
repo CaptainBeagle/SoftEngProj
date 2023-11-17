@@ -37,7 +37,7 @@
             // 
             this.Namelb.AutoSize = true;
             this.Namelb.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Namelb.Location = new System.Drawing.Point(56, 102);
+            this.Namelb.Location = new System.Drawing.Point(53, 61);
             this.Namelb.Name = "Namelb";
             this.Namelb.Size = new System.Drawing.Size(0, 42);
             this.Namelb.TabIndex = 0;
@@ -46,7 +46,7 @@
             // 
             this.Catlb.AutoSize = true;
             this.Catlb.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Catlb.Location = new System.Drawing.Point(56, 254);
+            this.Catlb.Location = new System.Drawing.Point(408, 61);
             this.Catlb.Name = "Catlb";
             this.Catlb.Size = new System.Drawing.Size(0, 42);
             this.Catlb.TabIndex = 2;
@@ -55,7 +55,7 @@
             // 
             this.Locationlb.AutoSize = true;
             this.Locationlb.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Locationlb.Location = new System.Drawing.Point(56, 400);
+            this.Locationlb.Location = new System.Drawing.Point(809, 61);
             this.Locationlb.Name = "Locationlb";
             this.Locationlb.Size = new System.Drawing.Size(0, 42);
             this.Locationlb.TabIndex = 3;
@@ -68,7 +68,7 @@
             this.Controls.Add(this.Catlb);
             this.Controls.Add(this.Namelb);
             this.Name = "UCModel";
-            this.Size = new System.Drawing.Size(641, 466);
+            this.Size = new System.Drawing.Size(1200, 260);
             this.Load += new System.EventHandler(this.UCModel_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

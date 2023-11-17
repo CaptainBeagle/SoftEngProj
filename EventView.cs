@@ -20,7 +20,17 @@ namespace SoftEngProj
         {
             InitializeComponent();
         }
-         
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void flowLayoutPanel15_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
         private void EventView_Load(object sender, EventArgs e)
         {
             //if statement to change display theme based on setting in settings menu
@@ -56,9 +66,8 @@ namespace SoftEngProj
                 DateLb.Text = CurrentMonth + "  " + CurrentDay + "  " + CurrentYear;
             }
             //ToDo: EventView UI (You can use the "Toolbox" menue in "EventView.cs [Design]" to add UI elements)
-            //  Add labels for each hour
-            //  Add flowlayout pannels with 30 min increment width
             //  Create add/edit menu and connect to AddEvent function
+            //  If more than one event, cancel action and make user change starttime
             //ToDo: Event creation and display
             if (CurrentDay == "16")
             {
@@ -70,7 +79,106 @@ namespace SoftEngProj
         {
             //Call this method when "save" button is clicked to add the inputed info to the Model
             UCModel uCModel = new UCModel(Ename, Elocation, Ecategory, Estarttime, Eendtime, repeatability, reminders);
-            this.Controls.Add(uCModel); //I may add flowlayoutpannel to organize it (And to put it in the right time slot)
+            if (Estarttime == 000)
+            {
+                flowLayoutPanel1.Controls.Add(uCModel);
+            }
+            else if (Estarttime == 100)
+            {
+                flowLayoutPanel2.Controls.Add(uCModel);
+            }
+            else if (Estarttime == 200)
+            {
+                flowLayoutPanel3.Controls.Add(uCModel);
+            }
+            else if (Estarttime == 300)
+            {
+                flowLayoutPanel4.Controls.Add(uCModel);
+            }
+            else if (Estarttime == 400)
+            {
+                flowLayoutPanel5.Controls.Add(uCModel);
+            }
+            else if (Estarttime == 500)
+            {
+                flowLayoutPanel6.Controls.Add(uCModel);
+            }
+            else if (Estarttime == 600)
+            {
+                flowLayoutPanel7.Controls.Add(uCModel);
+            }
+            else if (Estarttime == 700)
+            {
+                flowLayoutPanel8.Controls.Add(uCModel);
+            }
+            else if (Estarttime == 800)
+            {
+                flowLayoutPanel9.Controls.Add(uCModel);
+            }
+            else if (Estarttime == 900)
+            {
+                flowLayoutPanel10.Controls.Add(uCModel);
+            }
+            else if (Estarttime == 1000)
+            {
+                flowLayoutPanel11.Controls.Add(uCModel);
+            }
+            else if (Estarttime == 1100)
+            {
+                flowLayoutPanel12.Controls.Add(uCModel);
+            }
+            else if (Estarttime == 1200)
+            {
+                flowLayoutPanel13.Controls.Add(uCModel);
+            }
+            else if (Estarttime == 1300)
+            {
+                flowLayoutPanel14.Controls.Add(uCModel);
+            }
+            else if (Estarttime == 1400)
+            {
+                flowLayoutPanel15.Controls.Add(uCModel);
+            }
+            else if (Estarttime == 1500)
+            {
+                flowLayoutPanel16.Controls.Add(uCModel);
+            }
+            else if (Estarttime == 1600)
+            {
+                flowLayoutPanel17.Controls.Add(uCModel);
+            }
+            else if (Estarttime == 1700)
+            {
+                flowLayoutPanel18.Controls.Add(uCModel);
+            }
+            else if (Estarttime == 1800)
+            {
+                flowLayoutPanel19.Controls.Add(uCModel);
+            }
+            else if (Estarttime == 1900)
+            {
+                flowLayoutPanel20.Controls.Add(uCModel);
+            }
+            else if (Estarttime == 2000)
+            {
+                flowLayoutPanel21.Controls.Add(uCModel);
+            }
+            else if (Estarttime == 2100)
+            {
+                flowLayoutPanel22.Controls.Add(uCModel);
+            }
+            else if (Estarttime == 2200)
+            {
+                flowLayoutPanel23.Controls.Add(uCModel);
+            }
+            else if (Estarttime == 2300)
+            {
+                flowLayoutPanel24.Controls.Add(uCModel);
+            }
+            else if (Estarttime == 2400)
+            {
+                flowLayoutPanel25.Controls.Add(uCModel);
+            }
         }
     }
 }
