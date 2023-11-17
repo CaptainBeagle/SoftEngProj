@@ -31,6 +31,12 @@ namespace SoftEngProj
 
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AddEventInput AEI = new AddEventInput();
+            AEI.Show();
+        }
+
         private void EventView_Load(object sender, EventArgs e)
         {
             //if statement to change display theme based on setting in settings menu
@@ -72,112 +78,213 @@ namespace SoftEngProj
             if (CurrentDay == "16")
             {
                 AddEvent("TestEvent", "Route66", "A test", 800, 1000, "False", "False"); //Tests the display of the event
+                //Why won't this display?
             }
         }
 
-        public void AddEvent(string Ename, string Elocation, string Ecategory, int Estarttime, int Eendtime, string repeatability, string reminders)
+        public static FlowLayoutPanel GetFlowLayoutPanel(int flp)
+        {
+            FlowLayoutPanel flowLayoutPanel = new FlowLayoutPanel();
+            flowLayoutPanel.Size = new Size(1200, 260);
+            flowLayoutPanel.BorderStyle = BorderStyle.FixedSingle;
+            if(flp == 1)
+            {
+                flowLayoutPanel.Location = new Point(167, 141);
+            }
+            else if(flp == 2)
+            {
+                flowLayoutPanel.Location = new Point(167, 404);
+            }
+            else if(flp == 3)
+            {
+                flowLayoutPanel.Location = new Point(167, 670);
+            }
+            else if (flp == 4)
+            {
+                flowLayoutPanel.Location = new Point(167, 936);
+            }
+            else if (flp == 5)
+            {
+                flowLayoutPanel.Location = new Point(167, 1195);
+            }
+            else if (flp == 6)
+            {
+                flowLayoutPanel.Location = new Point(167, 1461);
+            }
+            else if (flp == 7)
+            {
+                flowLayoutPanel.Location = new Point(167, 1727);
+            }
+            else if (flp == 8)
+            {
+                flowLayoutPanel.Location = new Point(167, 1993);
+            }
+            else if (flp == 9)
+            {
+                flowLayoutPanel.Location = new Point(167, 2259);
+            }
+            else if (flp == 10)
+            {
+                flowLayoutPanel.Location = new Point(167, 2525);
+            }
+            else if (flp == 11)
+            {
+                flowLayoutPanel.Location = new Point(167, 2791);
+            }
+            else if (flp == 12)
+            {
+                flowLayoutPanel.Location = new Point(167, 3057);
+            }
+            else if (flp == 13)
+            {
+                flowLayoutPanel.Location = new Point(167, 3323);
+            }
+            else if (flp == 14)
+            {
+                flowLayoutPanel.Location = new Point(167, 3589);
+            }
+            else if (flp == 15)
+            {
+                flowLayoutPanel.Location = new Point(167, 3855);
+            }
+            else if (flp == 16)
+            {
+                flowLayoutPanel.Location = new Point(167, 4120);
+            }
+            else if (flp == 17)
+            {
+                flowLayoutPanel.Location = new Point(167, 4387);
+            }
+            else if (flp == 18)
+            {
+                flowLayoutPanel.Location = new Point(167, 4653);
+            }
+            else if (flp == 19)
+            {
+                flowLayoutPanel.Location = new Point(167, 4919);
+            }
+            else if (flp == 20)
+            {
+                flowLayoutPanel.Location = new Point(167, 5185);
+            }
+            else if (flp == 21)
+            {
+                flowLayoutPanel.Location = new Point(167, 5451);
+            }
+            else if (flp == 22)
+            {
+                flowLayoutPanel.Location = new Point(167, 5717);
+            }
+            else if (flp == 23)
+            {
+                flowLayoutPanel.Location = new Point(167, 5983);
+            }
+            else if (flp == 24)
+            {
+                flowLayoutPanel.Location = new Point(167, 6249);
+            }
+            return flowLayoutPanel;
+        }
+
+        public static void AddEvent(string Ename, string Elocation, string Ecategory, int Estarttime, int Eendtime, string repeatability, string reminders)
         {
             //Call this method when "save" button is clicked to add the inputed info to the Model
             UCModel uCModel = new UCModel(Ename, Elocation, Ecategory, Estarttime, Eendtime, repeatability, reminders);
             if (Estarttime == 000)
             {
-                flowLayoutPanel1.Controls.Add(uCModel);
+                GetFlowLayoutPanel(1).Controls.Add(uCModel);
             }
             else if (Estarttime == 100)
             {
-                flowLayoutPanel2.Controls.Add(uCModel);
+                GetFlowLayoutPanel(2).Controls.Add(uCModel);
             }
             else if (Estarttime == 200)
             {
-                flowLayoutPanel3.Controls.Add(uCModel);
+                GetFlowLayoutPanel(3).Controls.Add(uCModel);
             }
             else if (Estarttime == 300)
             {
-                flowLayoutPanel4.Controls.Add(uCModel);
+                GetFlowLayoutPanel(4).Controls.Add(uCModel);
             }
             else if (Estarttime == 400)
             {
-                flowLayoutPanel5.Controls.Add(uCModel);
+                GetFlowLayoutPanel(5).Controls.Add(uCModel);
             }
             else if (Estarttime == 500)
             {
-                flowLayoutPanel6.Controls.Add(uCModel);
+                GetFlowLayoutPanel(6).Controls.Add(uCModel);
             }
             else if (Estarttime == 600)
             {
-                flowLayoutPanel7.Controls.Add(uCModel);
+                GetFlowLayoutPanel(7).Controls.Add(uCModel);
             }
             else if (Estarttime == 700)
             {
-                flowLayoutPanel8.Controls.Add(uCModel);
+                GetFlowLayoutPanel(8).Controls.Add(uCModel);
             }
             else if (Estarttime == 800)
             {
-                flowLayoutPanel9.Controls.Add(uCModel);
+                GetFlowLayoutPanel(9).Controls.Add(uCModel);
             }
             else if (Estarttime == 900)
             {
-                flowLayoutPanel10.Controls.Add(uCModel);
+                GetFlowLayoutPanel(10).Controls.Add(uCModel);
             }
             else if (Estarttime == 1000)
             {
-                flowLayoutPanel11.Controls.Add(uCModel);
+                GetFlowLayoutPanel(11).Controls.Add(uCModel);
             }
             else if (Estarttime == 1100)
             {
-                flowLayoutPanel12.Controls.Add(uCModel);
+                GetFlowLayoutPanel(12).Controls.Add(uCModel);
             }
             else if (Estarttime == 1200)
             {
-                flowLayoutPanel13.Controls.Add(uCModel);
+                GetFlowLayoutPanel(13).Controls.Add(uCModel);
             }
             else if (Estarttime == 1300)
             {
-                flowLayoutPanel14.Controls.Add(uCModel);
+                GetFlowLayoutPanel(14).Controls.Add(uCModel);
             }
             else if (Estarttime == 1400)
             {
-                flowLayoutPanel15.Controls.Add(uCModel);
+                GetFlowLayoutPanel(15).Controls.Add(uCModel);
             }
             else if (Estarttime == 1500)
             {
-                flowLayoutPanel16.Controls.Add(uCModel);
+                GetFlowLayoutPanel(16).Controls.Add(uCModel);
             }
             else if (Estarttime == 1600)
             {
-                flowLayoutPanel17.Controls.Add(uCModel);
+                GetFlowLayoutPanel(17).Controls.Add(uCModel);
             }
             else if (Estarttime == 1700)
             {
-                flowLayoutPanel18.Controls.Add(uCModel);
+                GetFlowLayoutPanel(18).Controls.Add(uCModel);
             }
             else if (Estarttime == 1800)
             {
-                flowLayoutPanel19.Controls.Add(uCModel);
+                GetFlowLayoutPanel(19).Controls.Add(uCModel);
             }
             else if (Estarttime == 1900)
             {
-                flowLayoutPanel20.Controls.Add(uCModel);
+                GetFlowLayoutPanel(20).Controls.Add(uCModel);
             }
             else if (Estarttime == 2000)
             {
-                flowLayoutPanel21.Controls.Add(uCModel);
+                GetFlowLayoutPanel(21).Controls.Add(uCModel);
             }
             else if (Estarttime == 2100)
             {
-                flowLayoutPanel22.Controls.Add(uCModel);
+                GetFlowLayoutPanel(22).Controls.Add(uCModel);
             }
             else if (Estarttime == 2200)
             {
-                flowLayoutPanel23.Controls.Add(uCModel);
+                GetFlowLayoutPanel(23).Controls.Add(uCModel);
             }
             else if (Estarttime == 2300)
             {
-                flowLayoutPanel24.Controls.Add(uCModel);
-            }
-            else if (Estarttime == 2400)
-            {
-                flowLayoutPanel25.Controls.Add(uCModel);
+                GetFlowLayoutPanel(24).Controls.Add(uCModel);
             }
         }
     }

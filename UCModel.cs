@@ -27,7 +27,7 @@ namespace SoftEngProj
         {
             if (View.theme == 0)
             {
-                this.BackColor = SystemColors.Menu;
+                this.BackColor = SystemColors.Window;
                 Namelb.ForeColor = SystemColors.ControlText;
                 Catlb.ForeColor = SystemColors.ControlText;
                 Locationlb.ForeColor = SystemColors.ControlText;

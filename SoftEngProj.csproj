@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddEventInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddEventInput.Designer.cs">
+      <DependentUpon>AddEventInput.cs</DependentUpon>
+    </Compile>
     <Compile Include="ComponentModel.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -90,6 +96,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddEventInput.resx">
+      <DependentUpon>AddEventInput.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EventView.resx">
       <DependentUpon>EventView.cs</DependentUpon>
     </EmbeddedResource>
