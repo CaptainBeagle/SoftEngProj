@@ -41,6 +41,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.Reminder = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.Category = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBox1
@@ -196,11 +198,35 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // Category
+            // 
+            this.Category.FormattingEnabled = true;
+            this.Category.Items.AddRange(new object[] {
+            "Work",
+            "School",
+            "Social",
+            "Recreation"});
+            this.Category.Location = new System.Drawing.Point(589, 43);
+            this.Category.Name = "Category";
+            this.Category.Size = new System.Drawing.Size(121, 33);
+            this.Category.TabIndex = 13;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(467, 46);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(99, 25);
+            this.label5.TabIndex = 14;
+            this.label5.Text = "Category";
+            // 
             // AddEventInput
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.Category);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Reminder);
             this.Controls.Add(this.label4);
@@ -236,5 +262,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox Reminder;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox Category;
+        private System.Windows.Forms.Label label5;
     }
 }

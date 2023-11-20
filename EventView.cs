@@ -26,11 +26,6 @@ namespace SoftEngProj
 
         }
 
-        private void flowLayoutPanel15_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             AddEventInput AEI = new AddEventInput();
@@ -90,34 +85,42 @@ namespace SoftEngProj
             if(flp == 1)
             {
                 flowLayoutPanel.Location = new Point(167, 141);
+                flowLayoutPanel.TabIndex = 34;
             }
             else if(flp == 2)
             {
                 flowLayoutPanel.Location = new Point(167, 404);
+                flowLayoutPanel.TabIndex = 35;
             }
             else if(flp == 3)
             {
                 flowLayoutPanel.Location = new Point(167, 670);
+                flowLayoutPanel.TabIndex = 36;
             }
             else if (flp == 4)
             {
                 flowLayoutPanel.Location = new Point(167, 936);
+                flowLayoutPanel.TabIndex = 37;
             }
             else if (flp == 5)
             {
                 flowLayoutPanel.Location = new Point(167, 1195);
+                flowLayoutPanel.TabIndex = 38;
             }
             else if (flp == 6)
             {
                 flowLayoutPanel.Location = new Point(167, 1461);
+                flowLayoutPanel.TabIndex = 39;
             }
             else if (flp == 7)
             {
                 flowLayoutPanel.Location = new Point(167, 1727);
+                flowLayoutPanel.TabIndex = 40;
             }
             else if (flp == 8)
             {
                 flowLayoutPanel.Location = new Point(167, 1993);
+                flowLayoutPanel.TabIndex = 41;
             }
             else if (flp == 9)
             {
