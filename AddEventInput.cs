@@ -12,6 +12,8 @@ namespace SoftEngProj
 {
     public partial class AddEventInput : Form
     {
+        EventView Ev = new EventView();
+        public EventView Owner { get; set; }
         public AddEventInput()
         {
             InitializeComponent();
@@ -120,7 +122,14 @@ namespace SoftEngProj
             }
 
             //If you find a way to use the endtime variable, create if statements for E
-            EventView.AddEvent(textBox1.Text, textBox2.Text, Category.SelectedItem.ToString(), S, E, RepeatEvent.SelectedItem.ToString(), Reminder.SelectedItem.ToString());
+            //  If more than one event, cancel action and make user change starttime
+            Ev.AddEvent(textBox1.Text, textBox2.Text, Category.SelectedItem.ToString(), S, E, RepeatEvent.SelectedItem.ToString(), Reminder.SelectedItem.ToString());
+        }
+        
+        private void AddEventInput_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Owner.Close();
+            Ev.Show();
         }
     }
 }

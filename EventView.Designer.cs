@@ -54,6 +54,30 @@
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel6 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel7 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel8 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel9 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel10 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel11 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel12 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel13 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel14 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel15 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel16 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel17 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel18 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel19 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel20 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel21 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel22 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel23 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel24 = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
             // 
             // DateLb
@@ -292,6 +316,174 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(167, 141);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1200, 260);
+            this.flowLayoutPanel1.TabIndex = 34;
+            // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(167, 404);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(1200, 260);
+            this.flowLayoutPanel2.TabIndex = 35;
+            // 
+            // flowLayoutPanel3
+            // 
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(167, 670);
+            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(1200, 260);
+            this.flowLayoutPanel3.TabIndex = 35;
+            // 
+            // flowLayoutPanel4
+            // 
+            this.flowLayoutPanel4.Location = new System.Drawing.Point(167, 936);
+            this.flowLayoutPanel4.Name = "flowLayoutPanel4";
+            this.flowLayoutPanel4.Size = new System.Drawing.Size(1200, 260);
+            this.flowLayoutPanel4.TabIndex = 35;
+            // 
+            // flowLayoutPanel5
+            // 
+            this.flowLayoutPanel5.Location = new System.Drawing.Point(167, 1195);
+            this.flowLayoutPanel5.Name = "flowLayoutPanel5";
+            this.flowLayoutPanel5.Size = new System.Drawing.Size(1200, 260);
+            this.flowLayoutPanel5.TabIndex = 35;
+            // 
+            // flowLayoutPanel6
+            // 
+            this.flowLayoutPanel6.Location = new System.Drawing.Point(167, 1461);
+            this.flowLayoutPanel6.Name = "flowLayoutPanel6";
+            this.flowLayoutPanel6.Size = new System.Drawing.Size(1200, 260);
+            this.flowLayoutPanel6.TabIndex = 35;
+            // 
+            // flowLayoutPanel7
+            // 
+            this.flowLayoutPanel7.Location = new System.Drawing.Point(167, 1727);
+            this.flowLayoutPanel7.Name = "flowLayoutPanel7";
+            this.flowLayoutPanel7.Size = new System.Drawing.Size(1200, 260);
+            this.flowLayoutPanel7.TabIndex = 35;
+            // 
+            // flowLayoutPanel8
+            // 
+            this.flowLayoutPanel8.Location = new System.Drawing.Point(167, 1993);
+            this.flowLayoutPanel8.Name = "flowLayoutPanel8";
+            this.flowLayoutPanel8.Size = new System.Drawing.Size(1200, 260);
+            this.flowLayoutPanel8.TabIndex = 35;
+            // 
+            // flowLayoutPanel9
+            // 
+            this.flowLayoutPanel9.Location = new System.Drawing.Point(167, 2259);
+            this.flowLayoutPanel9.Name = "flowLayoutPanel9";
+            this.flowLayoutPanel9.Size = new System.Drawing.Size(1200, 260);
+            this.flowLayoutPanel9.TabIndex = 35;
+            // 
+            // flowLayoutPanel10
+            // 
+            this.flowLayoutPanel10.Location = new System.Drawing.Point(167, 2522);
+            this.flowLayoutPanel10.Name = "flowLayoutPanel10";
+            this.flowLayoutPanel10.Size = new System.Drawing.Size(1200, 260);
+            this.flowLayoutPanel10.TabIndex = 35;
+            // 
+            // flowLayoutPanel11
+            // 
+            this.flowLayoutPanel11.Location = new System.Drawing.Point(167, 2788);
+            this.flowLayoutPanel11.Name = "flowLayoutPanel11";
+            this.flowLayoutPanel11.Size = new System.Drawing.Size(1200, 260);
+            this.flowLayoutPanel11.TabIndex = 35;
+            // 
+            // flowLayoutPanel12
+            // 
+            this.flowLayoutPanel12.Location = new System.Drawing.Point(167, 3054);
+            this.flowLayoutPanel12.Name = "flowLayoutPanel12";
+            this.flowLayoutPanel12.Size = new System.Drawing.Size(1200, 260);
+            this.flowLayoutPanel12.TabIndex = 35;
+            // 
+            // flowLayoutPanel13
+            // 
+            this.flowLayoutPanel13.Location = new System.Drawing.Point(167, 3320);
+            this.flowLayoutPanel13.Name = "flowLayoutPanel13";
+            this.flowLayoutPanel13.Size = new System.Drawing.Size(1200, 260);
+            this.flowLayoutPanel13.TabIndex = 35;
+            // 
+            // flowLayoutPanel14
+            // 
+            this.flowLayoutPanel14.Location = new System.Drawing.Point(167, 3589);
+            this.flowLayoutPanel14.Name = "flowLayoutPanel14";
+            this.flowLayoutPanel14.Size = new System.Drawing.Size(1200, 260);
+            this.flowLayoutPanel14.TabIndex = 35;
+            // 
+            // flowLayoutPanel15
+            // 
+            this.flowLayoutPanel15.Location = new System.Drawing.Point(167, 3855);
+            this.flowLayoutPanel15.Name = "flowLayoutPanel15";
+            this.flowLayoutPanel15.Size = new System.Drawing.Size(1200, 260);
+            this.flowLayoutPanel15.TabIndex = 35;
+            // 
+            // flowLayoutPanel16
+            // 
+            this.flowLayoutPanel16.Location = new System.Drawing.Point(167, 4120);
+            this.flowLayoutPanel16.Name = "flowLayoutPanel16";
+            this.flowLayoutPanel16.Size = new System.Drawing.Size(1200, 260);
+            this.flowLayoutPanel16.TabIndex = 35;
+            // 
+            // flowLayoutPanel17
+            // 
+            this.flowLayoutPanel17.Location = new System.Drawing.Point(167, 4387);
+            this.flowLayoutPanel17.Name = "flowLayoutPanel17";
+            this.flowLayoutPanel17.Size = new System.Drawing.Size(1200, 260);
+            this.flowLayoutPanel17.TabIndex = 35;
+            // 
+            // flowLayoutPanel18
+            // 
+            this.flowLayoutPanel18.Location = new System.Drawing.Point(167, 4653);
+            this.flowLayoutPanel18.Name = "flowLayoutPanel18";
+            this.flowLayoutPanel18.Size = new System.Drawing.Size(1200, 260);
+            this.flowLayoutPanel18.TabIndex = 35;
+            // 
+            // flowLayoutPanel19
+            // 
+            this.flowLayoutPanel19.Location = new System.Drawing.Point(167, 4919);
+            this.flowLayoutPanel19.Name = "flowLayoutPanel19";
+            this.flowLayoutPanel19.Size = new System.Drawing.Size(1200, 260);
+            this.flowLayoutPanel19.TabIndex = 35;
+            // 
+            // flowLayoutPanel20
+            // 
+            this.flowLayoutPanel20.Location = new System.Drawing.Point(167, 5185);
+            this.flowLayoutPanel20.Name = "flowLayoutPanel20";
+            this.flowLayoutPanel20.Size = new System.Drawing.Size(1200, 260);
+            this.flowLayoutPanel20.TabIndex = 35;
+            // 
+            // flowLayoutPanel21
+            // 
+            this.flowLayoutPanel21.Location = new System.Drawing.Point(167, 5451);
+            this.flowLayoutPanel21.Name = "flowLayoutPanel21";
+            this.flowLayoutPanel21.Size = new System.Drawing.Size(1200, 260);
+            this.flowLayoutPanel21.TabIndex = 35;
+            // 
+            // flowLayoutPanel22
+            // 
+            this.flowLayoutPanel22.Location = new System.Drawing.Point(167, 5717);
+            this.flowLayoutPanel22.Name = "flowLayoutPanel22";
+            this.flowLayoutPanel22.Size = new System.Drawing.Size(1200, 260);
+            this.flowLayoutPanel22.TabIndex = 35;
+            // 
+            // flowLayoutPanel23
+            // 
+            this.flowLayoutPanel23.Location = new System.Drawing.Point(167, 5983);
+            this.flowLayoutPanel23.Name = "flowLayoutPanel23";
+            this.flowLayoutPanel23.Size = new System.Drawing.Size(1200, 260);
+            this.flowLayoutPanel23.TabIndex = 35;
+            // 
+            // flowLayoutPanel24
+            // 
+            this.flowLayoutPanel24.Location = new System.Drawing.Point(167, 6249);
+            this.flowLayoutPanel24.Name = "flowLayoutPanel24";
+            this.flowLayoutPanel24.Size = new System.Drawing.Size(1200, 260);
+            this.flowLayoutPanel24.TabIndex = 35;
+            // 
             // EventView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -301,6 +493,30 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.Menu;
             this.ClientSize = new System.Drawing.Size(1444, 881);
+            this.Controls.Add(this.flowLayoutPanel24);
+            this.Controls.Add(this.flowLayoutPanel23);
+            this.Controls.Add(this.flowLayoutPanel22);
+            this.Controls.Add(this.flowLayoutPanel21);
+            this.Controls.Add(this.flowLayoutPanel20);
+            this.Controls.Add(this.flowLayoutPanel19);
+            this.Controls.Add(this.flowLayoutPanel18);
+            this.Controls.Add(this.flowLayoutPanel17);
+            this.Controls.Add(this.flowLayoutPanel16);
+            this.Controls.Add(this.flowLayoutPanel15);
+            this.Controls.Add(this.flowLayoutPanel14);
+            this.Controls.Add(this.flowLayoutPanel13);
+            this.Controls.Add(this.flowLayoutPanel12);
+            this.Controls.Add(this.flowLayoutPanel11);
+            this.Controls.Add(this.flowLayoutPanel10);
+            this.Controls.Add(this.flowLayoutPanel9);
+            this.Controls.Add(this.flowLayoutPanel8);
+            this.Controls.Add(this.flowLayoutPanel7);
+            this.Controls.Add(this.flowLayoutPanel6);
+            this.Controls.Add(this.flowLayoutPanel5);
+            this.Controls.Add(this.flowLayoutPanel4);
+            this.Controls.Add(this.flowLayoutPanel3);
+            this.Controls.Add(this.flowLayoutPanel2);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label25);
             this.Controls.Add(this.label24);
@@ -365,5 +581,29 @@
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel5;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel6;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel7;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel8;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel9;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel10;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel11;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel12;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel13;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel14;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel15;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel16;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel17;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel18;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel19;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel20;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel21;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel22;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel23;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel24;
     }
 }

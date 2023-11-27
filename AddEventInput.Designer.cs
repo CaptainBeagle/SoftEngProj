@@ -242,6 +242,7 @@
             this.Controls.Add(this.textBox1);
             this.Name = "AddEventInput";
             this.Text = "AddEvent";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AddEventInput_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 
