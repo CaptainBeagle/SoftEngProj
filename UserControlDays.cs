@@ -12,6 +12,8 @@ namespace SoftEngProj
 {
     public partial class UserControlDays : UserControl
     {
+        string eventrep = ComponentModel.Rep;
+        public View Owner {  get; set; }
         public UserControlDays()
         {
             InitializeComponent();
@@ -21,25 +23,25 @@ namespace SoftEngProj
         {
             lbdays.Text = numday + "";
             //if the EventView corresponding to this day contains an instance of UCModel, make color not standard and still stand out. If not, make color standard.
-            if (View.theme == 0)
+            if (ComponentModel.savetheme == 0)
             {
                 this.BackColor = SystemColors.Window;
                 lbdays.ForeColor = SystemColors.WindowText;
             }
-            else if (View.theme == 1)
+            else if (ComponentModel.savetheme == 1)
             {
                 this.BackColor = SystemColors.ControlDarkDark;
                 lbdays.ForeColor = SystemColors.Control;
             }
-            else if (View.theme == 2)
+            else if (ComponentModel.savetheme == 2)
             {
 
             }
-            else if (View.theme == 3)
+            else if (ComponentModel.savetheme == 3)
             {
 
             }
-            else if (View.theme == 4)
+            else if (ComponentModel.savetheme == 4)
             {
 
             }
@@ -49,6 +51,22 @@ namespace SoftEngProj
         {
             EventView.CurrentDay = lbdays.Text;
             EventView ef = new EventView();
+            //Use eventrep here
+            //call ef.AddEvent([info from ComponentModel here]) depending on repeatability
+            if(eventrep == "Every day")
+            {
+                ef.AddEvent(ComponentModel.Ename,ComponentModel.Elocation,ComponentModel.Ecategory,ComponentModel.Estart,ComponentModel.Eend,ComponentModel.Erepeat,ComponentModel.Eremind);
+            }
+            DateTime now = new DateTime(Owner.Year, Owner.Month, Convert.ToInt32(lbdays.Text));
+            if(eventrep == "Weekends")
+            {
+                if ((now.DayOfWeek == DayOfWeek.Sunday) || (now.DayOfWeek == DayOfWeek.Saturday))
+                {
+                    //ef.AddEvent(etc)
+                }
+            }
+            //Do the same for Weekdays and Once a week
+            //Only problem with this method is that it can only handel one repeated event at a time, but limited functionality is better than none.
             ef.Show();
         }
     }

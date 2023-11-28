@@ -227,7 +227,12 @@ namespace SoftEngProj
                 MessageBox.Show("You cannot have an end time that takes place before start time.", "Error: Temporal Impossibility", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-            //Make repeat event section store event info in ComponentModel or somthing else to be used in appropriate instances of EventView
+            //Makes repeat event selection store event info in ComponentModel to be used in appropriate instances of EventView
+            if((RepeatEvent.SelectedItem.ToString() != "Never") || (RepeatEvent.SelectedItem.ToString() != null))
+            {
+                //stores event info in ComponentModel
+                ComponentModel.RepeatEvent(textBox1.Text, textBox2.Text, Category.SelectedItem.ToString(), S, E, RepeatEvent.SelectedItem.ToString(), Reminder.SelectedItem.ToString());
+            }
         }
         
         private void AddEventInput_FormClosed(object sender, FormClosedEventArgs e)

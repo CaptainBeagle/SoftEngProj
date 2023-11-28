@@ -14,29 +14,29 @@ namespace SoftEngProj
 {
     public partial class SettingView : Form
     {
-        
+        public View Owner {  get; set; }
         public SettingView()
         {
             InitializeComponent();
             
-            if (View.theme == 0)
+            if (ComponentModel.savetheme == 0)
             {
                 this.BackColor = SystemColors.Menu;
 
             }
-            else if (View.theme == 1)
+            else if (ComponentModel.savetheme == 1)
             {
                 this.BackColor = SystemColors.ControlText;
             }
-            else if (View.theme == 2)
+            else if (ComponentModel.savetheme == 2)
             {
 
             }
-            else if (View.theme == 3)
+            else if (ComponentModel.savetheme == 3)
             {
 
             }
-            else if (View.theme == 4)
+            else if (ComponentModel.savetheme == 4)
             {
 
             }
@@ -70,9 +70,8 @@ namespace SoftEngProj
             { 
                 ComponentModel.tips = false; 
             }
-            //View v = new View();
-            //v.displayDays();
-            //v.Show();
+            
+            Owner.displayDays();
         }
     }
 }

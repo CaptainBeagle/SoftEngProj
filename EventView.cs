@@ -36,25 +36,25 @@ namespace SoftEngProj
         private void EventView_Load(object sender, EventArgs e)
         {
             //if statement to change display theme based on setting in settings menu
-            if (View.theme == 0)
+            if (ComponentModel.savetheme == 0)
             {
                 this.BackColor = SystemColors.Menu;
                 DateLb.ForeColor = SystemColors.ControlText;
             }
-            else if (View.theme == 1)
+            else if (ComponentModel.savetheme == 1)
             {
                 this.BackColor = SystemColors.ControlText;
                 DateLb.ForeColor = SystemColors.Control;
             }
-            else if (View.theme == 2)
+            else if (ComponentModel.savetheme == 2)
             {
 
             }
-            else if (View.theme == 3)
+            else if (ComponentModel.savetheme == 3)
             {
 
             }
-            else if (View.theme == 4)
+            else if (ComponentModel.savetheme == 4)
             {
 
             }

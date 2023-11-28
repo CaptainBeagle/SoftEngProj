@@ -14,9 +14,9 @@ namespace SoftEngProj
     public partial class View : Form
     {
         static DateTime now = DateTime.Now;
-        int Month = now.Month;
-        int Year = now.Year;
-        public static int theme = ComponentModel.savetheme;
+        public int Month = now.Month;
+        public int Year = now.Year;
+        //public static int theme = ComponentModel.savetheme;
 
         public View()
         {
@@ -35,6 +35,7 @@ namespace SoftEngProj
             lbYear.Text = Year.ToString("");
             getMonth(Month);
 
+            int theme = ComponentModel.savetheme;
             //Code that changes theme
             if(theme == 0)
             {
@@ -88,7 +89,7 @@ namespace SoftEngProj
             int days = DateTime.DaysInMonth(Year, Month);
 
             //convert startofmonth to int
-            int dayofweek = Convert.ToInt32(startofmonth.DayOfWeek.ToString("d")) + 1;
+            int dayofweek = Convert.ToInt32(startofmonth.DayOfWeek.ToString("d")) + 1; //Maybe use int dayofweek to keep track of what day of the week it is for UserControlDays.
             for (int i = 1; i < dayofweek; i++)
             {
                 UserControlBlank ucblank = new UserControlBlank();
@@ -99,6 +100,7 @@ namespace SoftEngProj
             {
                 UserControlDays ucDays = new UserControlDays();
                 ucDays.Days(i);
+                ucDays.Owner = this;
                 flowLayoutPanel1.Controls.Add(ucDays);
             }
             if(ComponentModel.tips == true)
@@ -199,6 +201,7 @@ namespace SoftEngProj
         private void SetButton_Click(object sender, EventArgs e)
         {
             SettingView sv = new SettingView();
+            sv.Owner = this;
             sv.Show();
             
         }
