@@ -21,7 +21,7 @@ namespace SoftEngProj
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //Add If statements to translate user inputs into correct ints
+            //If statements to translate user inputs into correct ints
             int S = 0;
             int E = 0;
             if(Starthour.SelectedItem.ToString() == "12:00" && AmPm1.SelectedItem.ToString() == "Am")
@@ -218,7 +218,6 @@ namespace SoftEngProj
                 E = 2300;
             }
 
-            //  If more than one event, cancel action and make user change starttime
             if((S < E) || (S == E))
             {
                 Ev.AddEvent(textBox1.Text, textBox2.Text, Category.SelectedItem.ToString(), S, E, RepeatEvent.SelectedItem.ToString(), Reminder.SelectedItem.ToString());
@@ -227,6 +226,8 @@ namespace SoftEngProj
             {
                 MessageBox.Show("You cannot have an end time that takes place before start time.", "Error: Temporal Impossibility", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
+            //Make repeat event section store event info in ComponentModel or somthing else to be used in appropriate instances of EventView
         }
         
         private void AddEventInput_FormClosed(object sender, FormClosedEventArgs e)
