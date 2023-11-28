@@ -16,7 +16,6 @@ namespace SoftEngProj
         static DateTime now = DateTime.Now;
         public int Month = now.Month;
         public int Year = now.Year;
-        //public static int theme = ComponentModel.savetheme;
 
         public View()
         {

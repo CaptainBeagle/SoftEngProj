@@ -3478,7 +3478,7 @@ namespace SoftEngProj
                 }
             }
 
-            //add event info to ComponentModel or somthing else to be used when the EventView is reopened
+            //Add something to Remove Event
         }
     }
 }
