@@ -64,6 +64,12 @@
     <Compile Include="EventView.Designer.cs">
       <DependentUpon>EventView.cs</DependentUpon>
     </Compile>
+    <Compile Include="ScheduleTips.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScheduleTips.Designer.cs">
+      <DependentUpon>ScheduleTips.cs</DependentUpon>
+    </Compile>
     <Compile Include="SettingView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +107,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EventView.resx">
       <DependentUpon>EventView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScheduleTips.resx">
+      <DependentUpon>ScheduleTips.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SettingView.resx">
       <DependentUpon>SettingView.cs</DependentUpon>

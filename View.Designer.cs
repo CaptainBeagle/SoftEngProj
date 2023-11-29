@@ -44,6 +44,7 @@ namespace SoftEngProj
             this.lbMonth = new System.Windows.Forms.Label();
             this.lbYear = new System.Windows.Forms.Label();
             this.SetButton = new System.Windows.Forms.Button();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -167,6 +168,13 @@ namespace SoftEngProj
             this.SetButton.UseVisualStyleBackColor = true;
             this.SetButton.Click += new System.EventHandler(this.SetButton_Click);
             // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(48, 738);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(1365, 131);
+            this.flowLayoutPanel2.TabIndex = 13;
+            // 
             // View
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -174,6 +182,7 @@ namespace SoftEngProj
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.Menu;
             this.ClientSize = new System.Drawing.Size(1444, 881);
+            this.Controls.Add(this.flowLayoutPanel2);
             this.Controls.Add(this.SetButton);
             this.Controls.Add(this.lbYear);
             this.Controls.Add(this.lbMonth);
@@ -211,6 +220,7 @@ namespace SoftEngProj
         private System.Windows.Forms.Label lbMonth;
         private System.Windows.Forms.Label lbYear;
         private System.Windows.Forms.Button SetButton;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
     }
 }
 

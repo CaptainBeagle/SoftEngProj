@@ -31,6 +31,11 @@ namespace SoftEngProj
 
         public void displayDays()
         {
+            if(ComponentModel.tips == true)
+            {
+                ScheduleTips ST = new ScheduleTips();
+                flowLayoutPanel2.Controls.Add(ST);
+            }
             lbYear.Text = Year.ToString("");
             getMonth(Month);
 
