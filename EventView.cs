@@ -33,6 +33,18 @@ namespace SoftEngProj
             AEI.Show();
         }
 
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if(checkBox1.Checked == true)
+            {
+                ComponentModel.removeevent = true;
+            }
+            else
+            {
+                ComponentModel.removeevent = false;
+            }
+        }
+
         private void EventView_Load(object sender, EventArgs e)
         {
             //if statement to change display theme based on setting in settings menu
@@ -855,6 +867,7 @@ namespace SoftEngProj
                 if ((Eendtime - Estarttime) > 200)
                 {
                     UCModel uCModel1 = new UCModel(Ename, Elocation, Ecategory, Estarttime, Eendtime, repeatability, reminders);
+                    uCModel1.Ownedby = this;
                     if (Estarttime == 000)
                     {
                         if (flowLayoutPanel3.Controls.Count > 0)
@@ -1089,6 +1102,7 @@ namespace SoftEngProj
                     if ((Eendtime - Estarttime) > 300)
                     {
                         UCModel uCModel2 = new UCModel(Ename, Elocation, Ecategory, Estarttime, Eendtime, repeatability, reminders);
+                        uCModel2.Ownedby = this;
                         if (Estarttime == 000)
                         {
                             if (flowLayoutPanel4.Controls.Count > 0)
@@ -1312,6 +1326,7 @@ namespace SoftEngProj
                         if ((Eendtime - Estarttime) > 400)
                         {
                             UCModel uCModel3 = new UCModel(Ename, Elocation, Ecategory, Estarttime, Eendtime, repeatability, reminders);
+                            uCModel3.Ownedby = this;
                             if (Estarttime == 000)
                             {
                                 if (flowLayoutPanel5.Controls.Count > 0)
@@ -1524,6 +1539,7 @@ namespace SoftEngProj
                             if ((Eendtime - Estarttime) > 500)
                             {
                                 UCModel uCModel4 = new UCModel(Ename, Elocation, Ecategory, Estarttime, Eendtime, repeatability, reminders);
+                                uCModel4.Ownedby = this;
                                 if (Estarttime == 000)
                                 {
                                     if (flowLayoutPanel6.Controls.Count > 0)
@@ -1725,6 +1741,7 @@ namespace SoftEngProj
                                 if ((Eendtime - Estarttime) > 600)
                                 {
                                     UCModel uCModel5 = new UCModel(Ename, Elocation, Ecategory, Estarttime, Eendtime, repeatability, reminders);
+                                    uCModel5.Ownedby = this;
                                     if (Estarttime == 000)
                                     {
                                         if (flowLayoutPanel7.Controls.Count > 0)
@@ -1915,6 +1932,7 @@ namespace SoftEngProj
                                     if ((Eendtime - Estarttime) > 700)
                                     {
                                         UCModel uCModel6 = new UCModel(Ename, Elocation, Ecategory, Estarttime, Eendtime, repeatability, reminders);
+                                        uCModel6.Ownedby = this;
                                         if (Estarttime == 000)
                                         {
                                             if (flowLayoutPanel8.Controls.Count > 0)
@@ -2094,6 +2112,7 @@ namespace SoftEngProj
                                         if ((Eendtime - Estarttime) > 800)
                                         {
                                             UCModel uCModel7 = new UCModel(Ename, Elocation, Ecategory, Estarttime, Eendtime, repeatability, reminders);
+                                            uCModel7.Ownedby = this;
                                             if (Estarttime == 000)
                                             {
                                                 if (flowLayoutPanel9.Controls.Count > 0)
@@ -2262,6 +2281,7 @@ namespace SoftEngProj
                                             if ((Eendtime - Estarttime) > 900)
                                             {
                                                 UCModel uCModel8 = new UCModel(Ename, Elocation, Ecategory, Estarttime, Eendtime, repeatability, reminders);
+                                                uCModel8.Ownedby = this;
                                                 if (Estarttime == 000)
                                                 {
                                                     if (flowLayoutPanel10.Controls.Count > 0)
@@ -2419,6 +2439,7 @@ namespace SoftEngProj
                                                 if ((Eendtime - Estarttime) > 1000)
                                                 {
                                                     UCModel uCModel9 = new UCModel(Ename, Elocation, Ecategory, Estarttime, Eendtime, repeatability, reminders);
+                                                    uCModel9.Ownedby = this;
                                                     if (Estarttime == 000)
                                                     {
                                                         if (flowLayoutPanel11.Controls.Count > 0)
@@ -2565,6 +2586,7 @@ namespace SoftEngProj
                                                     if ((Eendtime - Estarttime) > 1100)
                                                     {
                                                         UCModel uCModelA = new UCModel(Ename, Elocation, Ecategory, Estarttime, Eendtime, repeatability, reminders);
+                                                        uCModelA.Ownedby = this;
                                                         if (Estarttime == 000)
                                                         {
                                                             if (flowLayoutPanel12.Controls.Count > 0)
@@ -2700,6 +2722,7 @@ namespace SoftEngProj
                                                         if ((Eendtime - Estarttime) > 1200)
                                                         {
                                                             UCModel uCModelB = new UCModel(Ename, Elocation, Ecategory, Estarttime, Eendtime, repeatability, reminders);
+                                                            uCModelB.Ownedby = this;
                                                             if (Estarttime == 000)
                                                             {
                                                                 if (flowLayoutPanel13.Controls.Count > 0)
@@ -2824,6 +2847,7 @@ namespace SoftEngProj
                                                             if ((Eendtime - Estarttime) > 1300)
                                                             {
                                                                 UCModel uCModelC = new UCModel(Ename, Elocation, Ecategory, Estarttime, Eendtime, repeatability, reminders);
+                                                                uCModelC.Ownedby = this;
                                                                 if (Estarttime == 000)
                                                                 {
                                                                     if (flowLayoutPanel14.Controls.Count > 0)
@@ -2937,6 +2961,7 @@ namespace SoftEngProj
                                                                 if ((Eendtime - Estarttime) > 1400)
                                                                 {
                                                                     UCModel uCModelD = new UCModel(Ename, Elocation, Ecategory, Estarttime, Eendtime, repeatability, reminders);
+                                                                    uCModelD.Ownedby = this;
                                                                     if (Estarttime == 000)
                                                                     {
                                                                         if (flowLayoutPanel15.Controls.Count > 0)
@@ -3039,6 +3064,7 @@ namespace SoftEngProj
                                                                     if ((Eendtime - Estarttime) > 1500)
                                                                     {
                                                                         UCModel uCModelE = new UCModel(Ename, Elocation, Ecategory, Estarttime, Eendtime, repeatability, reminders);
+                                                                        uCModelE.Ownedby = this;
                                                                         if (Estarttime == 000)
                                                                         {
                                                                             if (flowLayoutPanel16.Controls.Count > 0)
@@ -3130,6 +3156,7 @@ namespace SoftEngProj
                                                                         if ((Eendtime - Estarttime) > 1600)
                                                                         {
                                                                             UCModel uCModelF = new UCModel(Ename, Elocation, Ecategory, Estarttime, Eendtime, repeatability, reminders);
+                                                                            uCModelF.Ownedby = this;
                                                                             if (Estarttime == 000)
                                                                             {
                                                                                 if (flowLayoutPanel17.Controls.Count > 0)
@@ -3210,6 +3237,7 @@ namespace SoftEngProj
                                                                             if ((Eendtime - Estarttime) > 1700)
                                                                             {
                                                                                 UCModel uCModelG = new UCModel(Ename, Elocation, Ecategory, Estarttime, Eendtime, repeatability, reminders);
+                                                                                uCModelG.Ownedby = this;
                                                                                 if (Estarttime == 000)
                                                                                 {
                                                                                     if (flowLayoutPanel18.Controls.Count > 0)
@@ -3279,6 +3307,7 @@ namespace SoftEngProj
                                                                                 if ((Eendtime - Estarttime) > 1800)
                                                                                 {
                                                                                     UCModel uCModelH = new UCModel(Ename, Elocation, Ecategory, Estarttime, Eendtime, repeatability, reminders);
+                                                                                    uCModelH.Ownedby = this;
                                                                                     if (Estarttime == 000)
                                                                                     {
                                                                                         if (flowLayoutPanel19.Controls.Count > 0)
@@ -3337,6 +3366,7 @@ namespace SoftEngProj
                                                                                     if ((Eendtime - Estarttime) > 1900)
                                                                                     {
                                                                                         UCModel uCModelI = new UCModel(Ename, Elocation, Ecategory, Estarttime, Eendtime, repeatability, reminders);
+                                                                                        uCModelI.Ownedby = this;
                                                                                         if (Estarttime == 000)
                                                                                         {
                                                                                             if (flowLayoutPanel20.Controls.Count > 0)
@@ -3384,6 +3414,7 @@ namespace SoftEngProj
                                                                                         if ((Eendtime - Estarttime) > 2000)
                                                                                         {
                                                                                             UCModel uCModelJ = new UCModel(Ename, Elocation, Ecategory, Estarttime, Eendtime, repeatability, reminders);
+                                                                                            uCModelJ.Ownedby = this;
                                                                                             if (Estarttime == 000)
                                                                                             {
                                                                                                 if (flowLayoutPanel21.Controls.Count > 0)
@@ -3420,6 +3451,7 @@ namespace SoftEngProj
                                                                                             if ((Eendtime - Estarttime) > 2100)
                                                                                             {
                                                                                                 UCModel uCModelK = new UCModel(Ename, Elocation, Ecategory, Estarttime, Eendtime, repeatability, reminders);
+                                                                                                uCModelK.Ownedby = this;
                                                                                                 if (Estarttime == 000)
                                                                                                 {
                                                                                                     if (flowLayoutPanel22.Controls.Count > 0)
@@ -3477,8 +3509,109 @@ namespace SoftEngProj
                     }
                 }
             }
-
-            //Add something to Remove Event
+            uCModel.Ownedby = this;
+            uCModele.Ownedby = this;
+            uCModels.Ownedby = this;
+            foreach (UCModel uC in flowLayoutPanel1.Controls)
+            {
+                uC.Flp = flowLayoutPanel1;
+            }
+            foreach (UCModel uC in flowLayoutPanel2.Controls)
+            {
+                uC.Flp = flowLayoutPanel2;
+            }
+            foreach (UCModel uC in flowLayoutPanel3.Controls)
+            {
+                uC.Flp = flowLayoutPanel3;
+            }
+            foreach (UCModel uC in flowLayoutPanel4.Controls)
+            {
+                uC.Flp = flowLayoutPanel4;
+            }
+            foreach (UCModel uC in flowLayoutPanel5.Controls)
+            {
+                uC.Flp = flowLayoutPanel5;
+            }
+            foreach (UCModel uC in flowLayoutPanel6.Controls)
+            {
+                uC.Flp = flowLayoutPanel6;
+            }
+            foreach (UCModel uC in flowLayoutPanel7.Controls)
+            {
+                uC.Flp = flowLayoutPanel7;
+            }
+            foreach (UCModel uC in flowLayoutPanel8.Controls)
+            {
+                uC.Flp = flowLayoutPanel8;
+            }
+            foreach (UCModel uC in flowLayoutPanel9.Controls)
+            {
+                uC.Flp = flowLayoutPanel9;
+            }
+            foreach (UCModel uC in flowLayoutPanel10.Controls)
+            {
+                uC.Flp = flowLayoutPanel10;
+            }
+            foreach (UCModel uC in flowLayoutPanel11.Controls)
+            {
+                uC.Flp = flowLayoutPanel11;
+            }
+            foreach (UCModel uC in flowLayoutPanel12.Controls)
+            {
+                uC.Flp = flowLayoutPanel12;
+            }
+            foreach (UCModel uC in flowLayoutPanel13.Controls)
+            {
+                uC.Flp = flowLayoutPanel13;
+            }
+            foreach (UCModel uC in flowLayoutPanel14.Controls)
+            {
+                uC.Flp = flowLayoutPanel14;
+            }
+            foreach (UCModel uC in flowLayoutPanel15.Controls)
+            {
+                uC.Flp = flowLayoutPanel15;
+            }
+            foreach (UCModel uC in flowLayoutPanel16.Controls)
+            {
+                uC.Flp = flowLayoutPanel16;
+            }
+            foreach (UCModel uC in flowLayoutPanel17.Controls)
+            {
+                uC.Flp = flowLayoutPanel17;
+            }
+            foreach (UCModel uC in flowLayoutPanel18.Controls)
+            {
+                uC.Flp = flowLayoutPanel18;
+            }
+            foreach (UCModel uC in flowLayoutPanel19.Controls)
+            {
+                uC.Flp = flowLayoutPanel19;
+            }
+            foreach (UCModel uC in flowLayoutPanel20.Controls)
+            {
+                uC.Flp = flowLayoutPanel20;
+            }
+            foreach (UCModel uC in flowLayoutPanel21.Controls)
+            {
+                uC.Flp = flowLayoutPanel21;
+            }
+            foreach (UCModel uC in flowLayoutPanel22.Controls)
+            {
+                uC.Flp = flowLayoutPanel22;
+            }
+            foreach (UCModel uC in flowLayoutPanel23.Controls)
+            {
+                uC.Flp = flowLayoutPanel23;
+            }
+            foreach (UCModel uC in flowLayoutPanel24.Controls)
+            {
+                uC.Flp = flowLayoutPanel24;
+            }
+        }
+        public void RemoveEvent(UCModel U, FlowLayoutPanel F)
+        {
+            F.Controls.Remove(U);
         }
     }
 }

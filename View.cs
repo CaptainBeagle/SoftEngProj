@@ -88,7 +88,7 @@ namespace SoftEngProj
             int days = DateTime.DaysInMonth(Year, Month);
 
             //convert startofmonth to int
-            int dayofweek = Convert.ToInt32(startofmonth.DayOfWeek.ToString("d")) + 1; //Maybe use int dayofweek to keep track of what day of the week it is for UserControlDays.
+            int dayofweek = Convert.ToInt32(startofmonth.DayOfWeek.ToString("d")) + 1;
             for (int i = 1; i < dayofweek; i++)
             {
                 UserControlBlank ucblank = new UserControlBlank();

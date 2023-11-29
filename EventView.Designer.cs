@@ -78,6 +78,7 @@
             this.flowLayoutPanel22 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel23 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel24 = new System.Windows.Forms.FlowLayoutPanel();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // DateLb
@@ -484,6 +485,17 @@
             this.flowLayoutPanel24.Size = new System.Drawing.Size(1200, 260);
             this.flowLayoutPanel24.TabIndex = 35;
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(1051, 57);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(184, 29);
+            this.checkBox1.TabIndex = 36;
+            this.checkBox1.Text = "Remove Event";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
             // EventView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -493,6 +505,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.Menu;
             this.ClientSize = new System.Drawing.Size(1444, 881);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.flowLayoutPanel24);
             this.Controls.Add(this.flowLayoutPanel23);
             this.Controls.Add(this.flowLayoutPanel22);
@@ -605,5 +618,6 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel22;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel23;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel24;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }

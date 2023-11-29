@@ -12,6 +12,7 @@ namespace SoftEngProj
     {
         public static int savetheme = 0;
         public static bool dateorder = false;
+        public static bool removeevent = false;
         public static bool tips = true;
         public static string Rep = "";
         public static string Ename = string.Empty;

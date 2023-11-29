@@ -13,6 +13,8 @@ namespace SoftEngProj
 {
     public partial class UCModel : UserControl
     {
+        public EventView Ownedby { get; set; }
+        public FlowLayoutPanel Flp {  get; set; }
         public UCModel(string Ename, string Elocation, string Ecategory, int Estarttime, int Eendtime, string repeatability, string reminders)
         {
             InitializeComponent();
@@ -51,6 +53,14 @@ namespace SoftEngProj
             {
 
             }
+        }
+
+        public void UCModel_Click(object sender, EventArgs e)
+        {
+           if(ComponentModel.removeevent == true) 
+           {
+                Ownedby.RemoveEvent(this, Flp);
+           }
         }
     }
 }
