@@ -62,10 +62,17 @@ namespace SoftEngProj
             {
                 if ((now.DayOfWeek == DayOfWeek.Sunday) || (now.DayOfWeek == DayOfWeek.Saturday))
                 {
-                    //ef.AddEvent(etc)
+                    ef.AddEvent(ComponentModel.Ename, ComponentModel.Elocation, ComponentModel.Ecategory, ComponentModel.Estart, ComponentModel.Eend, ComponentModel.Erepeat, ComponentModel.Eremind);
                 }
             }
             //Do the same for Weekdays and Once a week
+            if(eventrep == "Weekdays")
+            {
+                if ((now.DayOfWeek == DayOfWeek.Monday) || (now.DayOfWeek == DayOfWeek.Tuesday) || (now.DayOfWeek == DayOfWeek.Wednesday) || (now.DayOfWeek == DayOfWeek.Thursday) || (now.DayOfWeek == DayOfWeek.Friday))
+                {
+                    ef.AddEvent(ComponentModel.Ename, ComponentModel.Elocation, ComponentModel.Ecategory, ComponentModel.Estart, ComponentModel.Eend, ComponentModel.Erepeat, ComponentModel.Eremind);
+                }
+            }
             //Only problem with this method is that it can only handel one repeated event at a time, but limited functionality is better than none.
             ef.Show();
         }
