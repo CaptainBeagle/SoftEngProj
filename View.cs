@@ -16,6 +16,8 @@ namespace SoftEngProj
         static DateTime now = DateTime.Now;
         public int Month = now.Month;
         public int Year = now.Year;
+        public ScheduleTips ST = new ScheduleTips();
+        
 
         public View()
         {
@@ -33,8 +35,14 @@ namespace SoftEngProj
         {
             if(ComponentModel.tips == true)
             {
-                ScheduleTips ST = new ScheduleTips();
+                if(ComponentModel.T == 4) 
+                {
+                    ComponentModel.T = 1;
+                }
+                ST.Re();
                 flowLayoutPanel2.Controls.Add(ST);
+                ST.V = this;
+                ComponentModel.T = ComponentModel.T + 1;
             }
             lbYear.Text = Year.ToString("");
             getMonth(Month);
@@ -69,15 +77,16 @@ namespace SoftEngProj
             }
             else if (theme == 2)
             {
-
-            }
-            else if (theme == 3)
-            {
-
-            }
-            else if (theme == 4)
-            {
-
+                this.BackColor = SystemColors.GradientInactiveCaption;
+                lbMonth.ForeColor = SystemColors.ControlText;
+                lbYear.ForeColor = SystemColors.ControlText;
+                label1.ForeColor = SystemColors.ControlText;
+                label2.ForeColor = SystemColors.ControlText;
+                label3.ForeColor = SystemColors.ControlText;
+                label4.ForeColor = SystemColors.ControlText;
+                label5.ForeColor = SystemColors.ControlText;
+                label6.ForeColor = SystemColors.ControlText;
+                label7.ForeColor = SystemColors.ControlText;
             }
 
             EventView.CurrentMonth = lbMonth.Text;
@@ -107,11 +116,6 @@ namespace SoftEngProj
                 ucDays.Owner = this;
                 flowLayoutPanel1.Controls.Add(ucDays);
             }
-            if(ComponentModel.tips == true)
-            {
-
-            }
-
         }
 
         public void getMonth(int M)
@@ -206,6 +210,7 @@ namespace SoftEngProj
         {
             SettingView sv = new SettingView();
             sv.Owner = this;
+            flowLayoutPanel2.Controls.Remove(ST);
             sv.Show();
             
         }

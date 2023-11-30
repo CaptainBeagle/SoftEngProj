@@ -220,7 +220,7 @@ namespace SoftEngProj
         private System.Windows.Forms.Label lbMonth;
         private System.Windows.Forms.Label lbYear;
         private System.Windows.Forms.Button SetButton;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
+        public System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
     }
 }
 

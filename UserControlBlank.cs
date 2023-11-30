@@ -31,15 +31,7 @@ namespace SoftEngProj
             }
             else if (ComponentModel.savetheme == 2)
             {
-
-            }
-            else if (ComponentModel.savetheme == 3)
-            {
-
-            }
-            else if (ComponentModel.savetheme == 4)
-            {
-
+                this.BackColor = SystemColors.GradientActiveCaption;
             }
         }
     }

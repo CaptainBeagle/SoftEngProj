@@ -35,15 +35,8 @@ namespace SoftEngProj
             }
             else if (ComponentModel.savetheme == 2)
             {
-
-            }
-            else if (ComponentModel.savetheme == 3)
-            {
-
-            }
-            else if (ComponentModel.savetheme == 4)
-            {
-
+                this.BackColor = SystemColors.GradientActiveCaption;
+                lbdays.ForeColor = SystemColors.Control;
             }
         }
 
@@ -74,6 +67,7 @@ namespace SoftEngProj
                 }
             }
             //Only problem with this method is that it can only handel one repeated event at a time, but limited functionality is better than none.
+            
             ef.Show();
         }
     }

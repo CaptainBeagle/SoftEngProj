@@ -85,9 +85,7 @@
             this.comboBox1.Items.AddRange(new object[] {
             "Default",
             "Dark Mode",
-            "Cool Blue",
-            "Orange Soda",
-            "Radiant Red"});
+            "Cool Blue"});
             this.comboBox1.Location = new System.Drawing.Point(394, 161);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(150, 37);

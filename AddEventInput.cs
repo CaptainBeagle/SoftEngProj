@@ -17,6 +17,67 @@ namespace SoftEngProj
         public AddEventInput()
         {
             InitializeComponent();
+            
+            if (ComponentModel.savetheme == 0)
+            {
+                this.BackColor = SystemColors.Window;
+                label1.ForeColor = SystemColors.WindowText;
+                label2.ForeColor = SystemColors.WindowText;
+                label3.ForeColor = SystemColors.WindowText;
+                label4.ForeColor = SystemColors.WindowText;
+                label5.ForeColor = SystemColors.WindowText;
+                textBox1.BackColor = SystemColors.Window;
+                textBox1.ForeColor = SystemColors.WindowText;
+                textBox2.BackColor = SystemColors.Window;
+                textBox2.ForeColor = SystemColors.WindowText;
+                Starthour.BackColor = SystemColors.Window;
+                EndHour.BackColor = SystemColors.Window;
+                AmPm1.BackColor = SystemColors.Window;
+                AmPm2.BackColor = SystemColors.Window;
+                Category.BackColor = SystemColors.Window;
+                RepeatEvent.BackColor = SystemColors.Window;
+                Reminder.BackColor = SystemColors.Window;
+            }
+            else if (ComponentModel.savetheme == 1)
+            {
+                this.BackColor = SystemColors.ControlDarkDark;
+                label1.ForeColor = SystemColors.Control;
+                label2.ForeColor = SystemColors.Control;
+                label3.ForeColor = SystemColors.Control;
+                label4.ForeColor = SystemColors.Control;
+                label5.ForeColor = SystemColors.Control;
+                textBox1.BackColor = SystemColors.ControlDark;
+                textBox1.ForeColor = SystemColors.WindowText;
+                textBox2.BackColor = SystemColors.ControlDark;
+                textBox2.ForeColor = SystemColors.WindowText;
+                Starthour.BackColor = SystemColors.ControlDark;
+                EndHour.BackColor = SystemColors.ControlDark;
+                AmPm1.BackColor = SystemColors.ControlDark;
+                AmPm2.BackColor = SystemColors.ControlDark;
+                Category.BackColor = SystemColors.ControlDark;
+                RepeatEvent.BackColor = SystemColors.ControlDark;
+                Reminder.BackColor = SystemColors.ControlDark;
+            }
+            else if (ComponentModel.savetheme == 2)
+            {
+                this.BackColor = SystemColors.GradientActiveCaption;
+                label1.ForeColor = SystemColors.Control;
+                label2.ForeColor = SystemColors.Control;
+                label3.ForeColor = SystemColors.Control;
+                label4.ForeColor = SystemColors.Control;
+                label5.ForeColor = SystemColors.Control;
+                textBox1.BackColor = SystemColors.Window;
+                textBox1.ForeColor = SystemColors.WindowText;
+                textBox2.BackColor = SystemColors.Window;
+                textBox2.ForeColor = SystemColors.WindowText;
+                Starthour.BackColor = SystemColors.GradientInactiveCaption;
+                EndHour.BackColor = SystemColors.GradientInactiveCaption;
+                AmPm1.BackColor = SystemColors.GradientInactiveCaption;
+                AmPm2.BackColor = SystemColors.GradientInactiveCaption;
+                Category.BackColor = SystemColors.GradientInactiveCaption;
+                RepeatEvent.BackColor = SystemColors.GradientInactiveCaption;
+                Reminder.BackColor = SystemColors.GradientInactiveCaption;
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)

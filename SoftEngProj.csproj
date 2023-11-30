@@ -91,11 +91,11 @@
     <Compile Include="SettingView.Designer.cs">
       <DependentUpon>SettingView.cs</DependentUpon>
     </Compile>
-    <Compile Include="TipWindow.cs">
+    <Compile Include="TipView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TipWindow.Designer.cs">
-      <DependentUpon>TipWindow.cs</DependentUpon>
+    <Compile Include="TipView.Designer.cs">
+      <DependentUpon>TipView.cs</DependentUpon>
     </Compile>
     <Compile Include="UCModel.cs">
       <SubType>UserControl</SubType>
@@ -135,8 +135,8 @@
     <EmbeddedResource Include="SettingView.resx">
       <DependentUpon>SettingView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TipWindow.resx">
-      <DependentUpon>TipWindow.cs</DependentUpon>
+    <EmbeddedResource Include="TipView.resx">
+      <DependentUpon>TipView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UCModel.resx">
       <DependentUpon>UCModel.cs</DependentUpon>

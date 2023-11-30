@@ -53,24 +53,93 @@ namespace SoftEngProj
             {
                 this.BackColor = SystemColors.Menu;
                 DateLb.ForeColor = SystemColors.ControlText;
+                checkBox1.ForeColor = SystemColors.ControlText;
+                label1.ForeColor = SystemColors.ControlText;
+                label2.ForeColor = SystemColors.ControlText;
+                label3.ForeColor = SystemColors.ControlText;
+                label4.ForeColor = SystemColors.ControlText;
+                label5.ForeColor = SystemColors.ControlText;
+                label6.ForeColor = SystemColors.ControlText;
+                label7.ForeColor = SystemColors.ControlText;
+                label8.ForeColor = SystemColors.ControlText;
+                label9.ForeColor = SystemColors.ControlText;
+                label10.ForeColor = SystemColors.ControlText;
+                label11.ForeColor = SystemColors.ControlText;
+                label12.ForeColor = SystemColors.ControlText;
+                label13.ForeColor = SystemColors.ControlText;
+                label14.ForeColor = SystemColors.ControlText;
+                label15.ForeColor = SystemColors.ControlText;
+                label16.ForeColor = SystemColors.ControlText;
+                label17.ForeColor = SystemColors.ControlText;
+                label18.ForeColor = SystemColors.ControlText;
+                label20.ForeColor = SystemColors.ControlText;
+                label21.ForeColor = SystemColors.ControlText;
+                label22.ForeColor = SystemColors.ControlText;
+                label23.ForeColor = SystemColors.ControlText;
+                label24.ForeColor = SystemColors.ControlText;
+                label25.ForeColor = SystemColors.ControlText;
             }
             else if (ComponentModel.savetheme == 1)
             {
                 this.BackColor = SystemColors.ControlText;
                 DateLb.ForeColor = SystemColors.Control;
+                checkBox1.ForeColor = SystemColors.Control;
+                label1.ForeColor = SystemColors.Control;
+                label2.ForeColor = SystemColors.Control;
+                label3.ForeColor = SystemColors.Control;
+                label4.ForeColor = SystemColors.Control;
+                label5.ForeColor = SystemColors.Control;
+                label6.ForeColor = SystemColors.Control;
+                label7.ForeColor = SystemColors.Control;
+                label8.ForeColor = SystemColors.Control;
+                label9.ForeColor = SystemColors.Control;
+                label10.ForeColor = SystemColors.Control;
+                label11.ForeColor = SystemColors.Control;
+                label12.ForeColor = SystemColors.Control;
+                label13.ForeColor = SystemColors.Control;
+                label14.ForeColor = SystemColors.Control;
+                label15.ForeColor = SystemColors.Control;
+                label16.ForeColor = SystemColors.Control;
+                label17.ForeColor = SystemColors.Control;
+                label18.ForeColor = SystemColors.Control;
+                label20.ForeColor = SystemColors.Control;
+                label21.ForeColor = SystemColors.Control;
+                label22.ForeColor = SystemColors.Control;
+                label23.ForeColor = SystemColors.Control;
+                label24.ForeColor = SystemColors.Control;
+                label25.ForeColor = SystemColors.Control;
             }
             else if (ComponentModel.savetheme == 2)
             {
-
+                this.BackColor = SystemColors.GradientInactiveCaption;
+                DateLb.ForeColor = SystemColors.ControlText;
+                checkBox1.ForeColor = SystemColors.ControlText;
+                label1.ForeColor = SystemColors.ControlText;
+                label2.ForeColor = SystemColors.ControlText;
+                label3.ForeColor = SystemColors.ControlText;
+                label4.ForeColor = SystemColors.ControlText;
+                label5.ForeColor = SystemColors.ControlText;
+                label6.ForeColor = SystemColors.ControlText;
+                label7.ForeColor = SystemColors.ControlText;
+                label8.ForeColor = SystemColors.ControlText;
+                label9.ForeColor = SystemColors.ControlText;
+                label10.ForeColor = SystemColors.ControlText;
+                label11.ForeColor = SystemColors.ControlText;
+                label12.ForeColor = SystemColors.ControlText;
+                label13.ForeColor = SystemColors.ControlText;
+                label14.ForeColor = SystemColors.ControlText;
+                label15.ForeColor = SystemColors.ControlText;
+                label16.ForeColor = SystemColors.ControlText;
+                label17.ForeColor = SystemColors.ControlText;
+                label18.ForeColor = SystemColors.ControlText;
+                label20.ForeColor = SystemColors.ControlText;
+                label21.ForeColor = SystemColors.ControlText;
+                label22.ForeColor = SystemColors.ControlText;
+                label23.ForeColor = SystemColors.ControlText;
+                label24.ForeColor = SystemColors.ControlText;
+                label25.ForeColor = SystemColors.ControlText;
             }
-            else if (ComponentModel.savetheme == 3)
-            {
-
-            }
-            else if (ComponentModel.savetheme == 4)
-            {
-
-            }
+            
             //If statement to change display order based on setting in settings menu
             if(ComponentModel.dateorder == true)
             {
@@ -3613,6 +3682,11 @@ namespace SoftEngProj
         public void RemoveEvent(UCModel U, FlowLayoutPanel F)
         {
             F.Controls.Remove(U);
+        }
+
+        private void EventView_FormClosed(object sender, EventArgs e)
+        {
+            
         }
     }
 }

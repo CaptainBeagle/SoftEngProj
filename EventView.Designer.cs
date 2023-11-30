@@ -561,6 +561,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EventView";
             this.Load += new System.EventHandler(this.EventView_Load);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.EventView_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 
