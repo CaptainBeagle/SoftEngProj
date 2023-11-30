@@ -16,5 +16,20 @@ namespace SoftEngProj
         {
             InitializeComponent();
         }
+
+        public void ScheduleTips_Click(object sender, EventArgs e)
+        {
+            //Tutorials
+            //  Basic Navigation
+            
+            //General advice
+            //  Schedule Downtime
+            //  Prioritize Events
+        }
+
+        private void ScheduleTips_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

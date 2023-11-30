@@ -16,6 +16,7 @@ namespace SoftEngProj
     public partial class EventView : Form
     {
         public static string CurrentMonth, CurrentYear, CurrentDay;
+        public UserControlDays Owned {  get; set; }
         public EventView()
         {
             InitializeComponent();

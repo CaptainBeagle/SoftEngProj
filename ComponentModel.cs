@@ -20,6 +20,7 @@ namespace SoftEngProj
         public static string Ecategory = string.Empty;
         public static int Estart = 0;
         public static int Eend = 0;
+        public static int dw = 0;
         public static string Erepeat = string.Empty;
         public static string Eremind = string.Empty;
         public ComponentModel()
