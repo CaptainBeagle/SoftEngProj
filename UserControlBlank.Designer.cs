@@ -37,6 +37,7 @@
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.Name = "UserControlBlank";
             this.Size = new System.Drawing.Size(186, 68);
+            this.Load += new System.EventHandler(this.UserControlBlank_Load);
             this.ResumeLayout(false);
 
         }

@@ -16,5 +16,31 @@ namespace SoftEngProj
         {
             InitializeComponent();
         }
+
+        private void UserControlBlank_Load(object sender, EventArgs e)
+        {
+            if (ComponentModel.savetheme == 0)
+            {
+                this.BackColor = SystemColors.Window;
+                
+            }
+            else if (ComponentModel.savetheme == 1)
+            {
+                this.BackColor = SystemColors.ControlDarkDark;
+                
+            }
+            else if (ComponentModel.savetheme == 2)
+            {
+
+            }
+            else if (ComponentModel.savetheme == 3)
+            {
+
+            }
+            else if (ComponentModel.savetheme == 4)
+            {
+
+            }
+        }
     }
 }

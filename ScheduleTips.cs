@@ -29,7 +29,28 @@ namespace SoftEngProj
 
         private void ScheduleTips_Load(object sender, EventArgs e)
         {
+            if (ComponentModel.savetheme == 0)
+            {
+                this.BackColor = SystemColors.Window;
+                label1.ForeColor = SystemColors.WindowText;
+            }
+            else if (ComponentModel.savetheme == 1)
+            {
+                this.BackColor = SystemColors.ControlDarkDark;
+                label1.ForeColor = SystemColors.Control;
+            }
+            else if (ComponentModel.savetheme == 2)
+            {
 
+            }
+            else if (ComponentModel.savetheme == 3)
+            {
+
+            }
+            else if (ComponentModel.savetheme == 4)
+            {
+
+            }
         }
     }
 }
