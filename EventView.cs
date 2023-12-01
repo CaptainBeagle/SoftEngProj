@@ -3682,6 +3682,8 @@ namespace SoftEngProj
         public void RemoveEvent(UCModel U, FlowLayoutPanel F)
         {
             F.Controls.Remove(U);
+            F.Controls.Clear();
+            ComponentModel.Rep = null;
         }
 
         private void EventView_FormClosed(object sender, EventArgs e)

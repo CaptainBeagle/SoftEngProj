@@ -12,7 +12,6 @@ namespace SoftEngProj
 {
     public partial class UserControlDays : UserControl
     {
-        string eventrep = ComponentModel.Rep;
         public View Owner {  get; set; }
         public UserControlDays()
         {
@@ -42,11 +41,13 @@ namespace SoftEngProj
 
         private void UserControlDays_Click(object sender, EventArgs e)
         {
+            string eventrep = ComponentModel.Rep;
             EventView.CurrentDay = lbdays.Text;
             EventView ef = new EventView();
             //Use eventrep here
             //call ef.AddEvent([info from ComponentModel here]) depending on repeatability
-            if(eventrep == "Every day")
+            ef.Show();
+            if (eventrep == "Every day")
             {
                 ef.AddEvent(ComponentModel.Ename,ComponentModel.Elocation,ComponentModel.Ecategory,ComponentModel.Estart,ComponentModel.Eend,ComponentModel.Erepeat,ComponentModel.Eremind);
             }
@@ -68,7 +69,7 @@ namespace SoftEngProj
             }
             //Only problem with this method is that it can only handel one repeated event at a time, but limited functionality is better than none.
             
-            ef.Show();
+            
         }
     }
 }
