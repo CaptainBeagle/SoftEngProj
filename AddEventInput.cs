@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Toolkit.Uwp.Notifications;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -293,6 +294,11 @@ namespace SoftEngProj
             {
                 //stores event info in ComponentModel
                 ComponentModel.RepeatEvent(textBox1.Text, textBox2.Text, Category.SelectedItem.ToString(), S, E, RepeatEvent.SelectedItem.ToString(), Reminder.SelectedItem.ToString());
+            }
+
+            if((Reminder.SelectedItem.ToString() != "Never") || (Reminder.SelectedItem.ToString() != null))
+            {
+                
             }
         }
         

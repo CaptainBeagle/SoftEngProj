@@ -3688,7 +3688,8 @@ namespace SoftEngProj
 
         private void EventView_FormClosed(object sender, EventArgs e)
         {
-            
+            //I can't do this anymore. Couldn't instal packages for notifications and get them to work. I quit. I never want to have to do this again.
+            //A small part of me wants to give up on a functioning adult life altogether. The prospect of being a shut-in sounds more appealing each minute I spend here.
         }
     }
 }
