@@ -15,11 +15,13 @@ namespace SoftEngProj
 {
     public partial class EventView : Form
     {
+        private const int V = 1;
         public static string CurrentMonth, CurrentYear, CurrentDay;
         public UserControlDays Owned {  get; set; }
         public EventView()
         {
             InitializeComponent();
+            
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -79,7 +81,7 @@ namespace SoftEngProj
                 label24.ForeColor = SystemColors.ControlText;
                 label25.ForeColor = SystemColors.ControlText;
             }
-            else if (ComponentModel.savetheme == 1)
+            else if (ComponentModel.savetheme == V)
             {
                 this.BackColor = SystemColors.ControlText;
                 DateLb.ForeColor = SystemColors.Control;
@@ -159,7 +161,7 @@ namespace SoftEngProj
             UCModel uCModele = new UCModel(Ename, Elocation, Ecategory, Estarttime, Eendtime, repeatability, reminders);
             if (Estarttime == 000)
             {
-                if (flowLayoutPanel1.Controls.Count > 0)
+                if (flowLayoutPanel1.Controls.Count > V)
                 {
                     MessageBox.Show("Two events cannot overlap. Please re-Schedule.", "Error: Overlapping Events", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -170,7 +172,7 @@ namespace SoftEngProj
             }
             else if (Estarttime == 100)
             {
-                if (flowLayoutPanel2.Controls.Count > 0)
+                if (flowLayoutPanel2.Controls.Count > V)
                 {
                     MessageBox.Show("Two events cannot overlap. Please re-Schedule.", "Error: Overlapping Events", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -181,7 +183,7 @@ namespace SoftEngProj
             }
             else if (Estarttime == 200)
             {
-                if (flowLayoutPanel3.Controls.Count > 0)
+                if (flowLayoutPanel3.Controls.Count > V)
                 {
                     MessageBox.Show("Two events cannot overlap. Please re-Schedule.", "Error: Overlapping Events", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -192,7 +194,7 @@ namespace SoftEngProj
             }
             else if (Estarttime == 300)
             {
-                if (flowLayoutPanel4.Controls.Count > 0)
+                if (flowLayoutPanel4.Controls.Count > V)
                 {
                     MessageBox.Show("Two events cannot overlap. Please re-Schedule.", "Error: Overlapping Events", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -203,7 +205,7 @@ namespace SoftEngProj
             }
             else if (Estarttime == 400)
             {
-                if (flowLayoutPanel5.Controls.Count > 0)
+                if (flowLayoutPanel5.Controls.Count > V)
                 {
                     MessageBox.Show("Two events cannot overlap. Please re-Schedule.", "Error: Overlapping Events", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -214,7 +216,7 @@ namespace SoftEngProj
             }
             else if (Estarttime == 500)
             {
-                if (flowLayoutPanel6.Controls.Count > 0)
+                if (flowLayoutPanel6.Controls.Count > V)
                 {
                     MessageBox.Show("Two events cannot overlap. Please re-Schedule.", "Error: Overlapping Events", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -225,7 +227,7 @@ namespace SoftEngProj
             }
             else if (Estarttime == 600)
             {
-                if (flowLayoutPanel7.Controls.Count > 0)
+                if (flowLayoutPanel7.Controls.Count > V)
                 {
                     MessageBox.Show("Two events cannot overlap. Please re-Schedule.", "Error: Overlapping Events", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -236,7 +238,7 @@ namespace SoftEngProj
             }
             else if (Estarttime == 700)
             {
-                if (flowLayoutPanel8.Controls.Count > 0)
+                if (flowLayoutPanel8.Controls.Count > V)
                 {
                     MessageBox.Show("Two events cannot overlap. Please re-Schedule.", "Error: Overlapping Events", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -247,7 +249,7 @@ namespace SoftEngProj
             }
             else if (Estarttime == 800)
             {
-                if (flowLayoutPanel9.Controls.Count > 0)
+                if (flowLayoutPanel9.Controls.Count > V)
                 {
                     MessageBox.Show("Two events cannot overlap. Please re-Schedule.", "Error: Overlapping Events", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -258,7 +260,7 @@ namespace SoftEngProj
             }
             else if (Estarttime == 900)
             {
-                if (flowLayoutPanel10.Controls.Count > 0)
+                if (flowLayoutPanel10.Controls.Count > V)
                 {
                     MessageBox.Show("Two events cannot overlap. Please re-Schedule.", "Error: Overlapping Events", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -269,7 +271,7 @@ namespace SoftEngProj
             }
             else if (Estarttime == 1000)
             {
-                if (flowLayoutPanel11.Controls.Count > 0)
+                if (flowLayoutPanel11.Controls.Count > V)
                 {
                     MessageBox.Show("Two events cannot overlap. Please re-Schedule.", "Error: Overlapping Events", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -280,7 +282,7 @@ namespace SoftEngProj
             }
             else if (Estarttime == 1100)
             {
-                if (flowLayoutPanel12.Controls.Count > 0)
+                if (flowLayoutPanel12.Controls.Count > V)
                 {
                     MessageBox.Show("Two events cannot overlap. Please re-Schedule.", "Error: Overlapping Events", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -291,7 +293,7 @@ namespace SoftEngProj
             }
             else if (Estarttime == 1200)
             {
-                if (flowLayoutPanel13.Controls.Count > 0)
+                if (flowLayoutPanel13.Controls.Count > V)
                 {
                     MessageBox.Show("Two events cannot overlap. Please re-Schedule.", "Error: Overlapping Events", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -302,7 +304,7 @@ namespace SoftEngProj
             }
             else if (Estarttime == 1300)
             {
-                if (flowLayoutPanel14.Controls.Count > 0)
+                if (flowLayoutPanel14.Controls.Count > V)
                 {
                     MessageBox.Show("Two events cannot overlap. Please re-Schedule.", "Error: Overlapping Events", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -313,7 +315,7 @@ namespace SoftEngProj
             }
             else if (Estarttime == 1400)
             {
-                if (flowLayoutPanel15.Controls.Count > 0)
+                if (flowLayoutPanel15.Controls.Count > V)
                 {
                     MessageBox.Show("Two events cannot overlap. Please re-Schedule.", "Error: Overlapping Events", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -324,7 +326,7 @@ namespace SoftEngProj
             }
             else if (Estarttime == 1500)
             {
-                if (flowLayoutPanel16.Controls.Count > 0)
+                if (flowLayoutPanel16.Controls.Count > V)
                 {
                     MessageBox.Show("Two events cannot overlap. Please re-Schedule.", "Error: Overlapping Events", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -335,7 +337,7 @@ namespace SoftEngProj
             }
             else if (Estarttime == 1600)
             {
-                if (flowLayoutPanel17.Controls.Count > 0)
+                if (flowLayoutPanel17.Controls.Count > V)
                 {
                     MessageBox.Show("Two events cannot overlap. Please re-Schedule.", "Error: Overlapping Events", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -346,7 +348,7 @@ namespace SoftEngProj
             }
             else if (Estarttime == 1700)
             {
-                if (flowLayoutPanel18.Controls.Count > 0)
+                if (flowLayoutPanel18.Controls.Count > V)
                 {
                     MessageBox.Show("Two events cannot overlap. Please re-Schedule.", "Error: Overlapping Events", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -357,7 +359,7 @@ namespace SoftEngProj
             }
             else if (Estarttime == 1800)
             {
-                if (flowLayoutPanel19.Controls.Count > 0)
+                if (flowLayoutPanel19.Controls.Count > V)
                 {
                     MessageBox.Show("Two events cannot overlap. Please re-Schedule.", "Error: Overlapping Events", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -368,7 +370,7 @@ namespace SoftEngProj
             }
             else if (Estarttime == 1900)
             {
-                if (flowLayoutPanel20.Controls.Count > 0)
+                if (flowLayoutPanel20.Controls.Count > V)
                 {
                     MessageBox.Show("Two events cannot overlap. Please re-Schedule.", "Error: Overlapping Events", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -379,7 +381,7 @@ namespace SoftEngProj
             }
             else if (Estarttime == 2000)
             {
-                if (flowLayoutPanel21.Controls.Count > 0)
+                if (flowLayoutPanel21.Controls.Count > V)
                 {
                     MessageBox.Show("Two events cannot overlap. Please re-Schedule.", "Error: Overlapping Events", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -390,7 +392,7 @@ namespace SoftEngProj
             }
             else if (Estarttime == 2100)
             {
-                if (flowLayoutPanel22.Controls.Count > 0)
+                if (flowLayoutPanel22.Controls.Count > V)
                 {
                     MessageBox.Show("Two events cannot overlap. Please re-Schedule.", "Error: Overlapping Events", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -401,7 +403,7 @@ namespace SoftEngProj
             }
             else if (Estarttime == 2200)
             {
-                if (flowLayoutPanel23.Controls.Count > 0)
+                if (flowLayoutPanel23.Controls.Count > V)
                 {
                     MessageBox.Show("Two events cannot overlap. Please re-Schedule.", "Error: Overlapping Events", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -412,7 +414,7 @@ namespace SoftEngProj
             }
             else if (Estarttime == 2300)
             {
-                if (flowLayoutPanel24.Controls.Count > 0)
+                if (flowLayoutPanel24.Controls.Count > V)
                 {
                     MessageBox.Show("Two events cannot overlap. Please re-Schedule.", "Error: Overlapping Events", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -421,12 +423,12 @@ namespace SoftEngProj
                     flowLayoutPanel24.Controls.Add(uCModels);
                 }
             }
-
+            
             if ((Eendtime - Estarttime) != 0)
             {
                 if (Eendtime == 000)
                 {
-                    if (flowLayoutPanel1.Controls.Count > 0)
+                    if (flowLayoutPanel1.Controls.Count > V)
                     {
                         MessageBox.Show("Two events cannot overlap. Please re-Schedule.", "Error: Overlapping Events", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -437,7 +439,7 @@ namespace SoftEngProj
                 }
                 else if (Eendtime == 100)
                 {
-                    if (flowLayoutPanel2.Controls.Count > 0)
+                    if (flowLayoutPanel2.Controls.Count > V)
                     {
                         MessageBox.Show("Two events cannot overlap. Please re-Schedule.", "Error: Overlapping Events", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -448,7 +450,7 @@ namespace SoftEngProj
                 }
                 else if (Eendtime == 200)
                 {
-                    if (flowLayoutPanel3.Controls.Count > 0)
+                    if (flowLayoutPanel3.Controls.Count > V)
                     {
                         MessageBox.Show("Two events cannot overlap. Please re-Schedule.", "Error: Overlapping Events", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -459,7 +461,7 @@ namespace SoftEngProj
                 }
                 else if (Eendtime == 300)
                 {
-                    if (flowLayoutPanel4.Controls.Count > 0)
+                    if (flowLayoutPanel4.Controls.Count > V)
                     {
                         MessageBox.Show("Two events cannot overlap. Please re-Schedule.", "Error: Overlapping Events", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -470,7 +472,7 @@ namespace SoftEngProj
                 }
                 else if (Eendtime == 400)
                 {
-                    if (flowLayoutPanel5.Controls.Count > 0)
+                    if (flowLayoutPanel5.Controls.Count > V)
                     {
                         MessageBox.Show("Two events cannot overlap. Please re-Schedule.", "Error: Overlapping Events", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -481,7 +483,7 @@ namespace SoftEngProj
                 }
                 else if (Eendtime == 500)
                 {
-                    if (flowLayoutPanel6.Controls.Count > 0)
+                    if (flowLayoutPanel6.Controls.Count > V)
                     {
                         MessageBox.Show("Two events cannot overlap. Please re-Schedule.", "Error: Overlapping Events", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -492,7 +494,7 @@ namespace SoftEngProj
                 }
                 else if (Eendtime == 600)
                 {
-                    if (flowLayoutPanel7.Controls.Count > 0)
+                    if (flowLayoutPanel7.Controls.Count > V)
                     {
                         MessageBox.Show("Two events cannot overlap. Please re-Schedule.", "Error: Overlapping Events", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -503,7 +505,7 @@ namespace SoftEngProj
                 }
                 else if (Eendtime == 700)
                 {
-                    if (flowLayoutPanel8.Controls.Count > 0)
+                    if (flowLayoutPanel8.Controls.Count > V)
                     {
                         MessageBox.Show("Two events cannot overlap. Please re-Schedule.", "Error: Overlapping Events", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -514,7 +516,7 @@ namespace SoftEngProj
                 }
                 else if (Eendtime == 800)
                 {
-                    if (flowLayoutPanel9.Controls.Count > 0)
+                    if (flowLayoutPanel9.Controls.Count > V)
                     {
                         MessageBox.Show("Two events cannot overlap. Please re-Schedule.", "Error: Overlapping Events", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -525,7 +527,7 @@ namespace SoftEngProj
                 }
                 else if (Eendtime == 900)
                 {
-                    if (flowLayoutPanel10.Controls.Count > 0)
+                    if (flowLayoutPanel10.Controls.Count > V)
                     {
                         MessageBox.Show("Two events cannot overlap. Please re-Schedule.", "Error: Overlapping Events", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -536,7 +538,7 @@ namespace SoftEngProj
                 }
                 else if (Eendtime == 1000)
                 {
-                    if (flowLayoutPanel11.Controls.Count > 0)
+                    if (flowLayoutPanel11.Controls.Count > V)
                     {
                         MessageBox.Show("Two events cannot overlap. Please re-Schedule.", "Error: Overlapping Events", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -547,7 +549,7 @@ namespace SoftEngProj
                 }
                 else if (Eendtime == 1100)
                 {
-                    if (flowLayoutPanel12.Controls.Count > 0)
+                    if (flowLayoutPanel12.Controls.Count > V)
                     {
                         MessageBox.Show("Two events cannot overlap. Please re-Schedule.", "Error: Overlapping Events", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -558,7 +560,7 @@ namespace SoftEngProj
                 }
                 else if (Eendtime == 1200)
                 {
-                    if (flowLayoutPanel13.Controls.Count > 0)
+                    if (flowLayoutPanel13.Controls.Count > V)
                     {
                         MessageBox.Show("Two events cannot overlap. Please re-Schedule.", "Error: Overlapping Events", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -569,7 +571,7 @@ namespace SoftEngProj
                 }
                 else if (Eendtime == 1300)
                 {
-                    if (flowLayoutPanel14.Controls.Count > 0)
+                    if (flowLayoutPanel14.Controls.Count > V)
                     {
                         MessageBox.Show("Two events cannot overlap. Please re-Schedule.", "Error: Overlapping Events", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -580,7 +582,7 @@ namespace SoftEngProj
                 }
                 else if (Eendtime == 1400)
                 {
-                    if (flowLayoutPanel15.Controls.Count > 0)
+                    if (flowLayoutPanel15.Controls.Count > V)
                     {
                         MessageBox.Show("Two events cannot overlap. Please re-Schedule.", "Error: Overlapping Events", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -591,7 +593,7 @@ namespace SoftEngProj
                 }
                 else if (Eendtime == 1500)
                 {
-                    if (flowLayoutPanel16.Controls.Count > 0)
+                    if (flowLayoutPanel16.Controls.Count > V)
                     {
                         MessageBox.Show("Two events cannot overlap. Please re-Schedule.", "Error: Overlapping Events", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -694,7 +696,7 @@ namespace SoftEngProj
             {
                 if(Estarttime == 000)
                 {
-                    if (flowLayoutPanel2.Controls.Count > 0)
+                    if (flowLayoutPanel2.Controls.Count > V)
                     {
                         MessageBox.Show("Two events cannot overlap. Please re-Schedule.", "Error: Overlapping Events", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -705,7 +707,7 @@ namespace SoftEngProj
                 }
                 else if(Estarttime == 100)
                 {
-                    if (flowLayoutPanel3.Controls.Count > 0)
+                    if (flowLayoutPanel3.Controls.Count > V)
                     {
                         MessageBox.Show("Two events cannot overlap. Please re-Schedule.", "Error: Overlapping Events", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -716,7 +718,7 @@ namespace SoftEngProj
                 }
                 else if(Estarttime == 200)
                 {
-                    if (flowLayoutPanel4.Controls.Count > 0)
+                    if (flowLayoutPanel4.Controls.Count > V)
                     {
                         MessageBox.Show("Two events cannot overlap. Please re-Schedule.", "Error: Overlapping Events", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -727,7 +729,7 @@ namespace SoftEngProj
                 }
                 else if (Estarttime == 300)
                 {
-                    if (flowLayoutPanel5.Controls.Count > 0)
+                    if (flowLayoutPanel5.Controls.Count > V)
                     {
                         MessageBox.Show("Two events cannot overlap. Please re-Schedule.", "Error: Overlapping Events", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -738,7 +740,7 @@ namespace SoftEngProj
                 }
                 else if (Estarttime == 400)
                 {
-                    if (flowLayoutPanel6.Controls.Count > 0)
+                    if (flowLayoutPanel6.Controls.Count > V)
                     {
                         MessageBox.Show("Two events cannot overlap. Please re-Schedule.", "Error: Overlapping Events", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -749,7 +751,7 @@ namespace SoftEngProj
                 }
                 else if (Estarttime == 500)
                 {
-                    if (flowLayoutPanel7.Controls.Count > 0)
+                    if (flowLayoutPanel7.Controls.Count > V)
                     {
                         MessageBox.Show("Two events cannot overlap. Please re-Schedule.", "Error: Overlapping Events", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -760,7 +762,7 @@ namespace SoftEngProj
                 }
                 else if (Estarttime == 600)
                 {
-                    if (flowLayoutPanel8.Controls.Count > 0)
+                    if (flowLayoutPanel8.Controls.Count > V)
                     {
                         MessageBox.Show("Two events cannot overlap. Please re-Schedule.", "Error: Overlapping Events", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -771,7 +773,7 @@ namespace SoftEngProj
                 }
                 else if (Estarttime == 700)
                 {
-                    if (flowLayoutPanel9.Controls.Count > 0)
+                    if (flowLayoutPanel9.Controls.Count > V)
                     {
                         MessageBox.Show("Two events cannot overlap. Please re-Schedule.", "Error: Overlapping Events", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -782,7 +784,7 @@ namespace SoftEngProj
                 }
                 else if (Estarttime == 800)
                 {
-                    if (flowLayoutPanel10.Controls.Count > 0)
+                    if (flowLayoutPanel10.Controls.Count > V)
                     {
                         MessageBox.Show("Two events cannot overlap. Please re-Schedule.", "Error: Overlapping Events", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -793,7 +795,7 @@ namespace SoftEngProj
                 }
                 else if (Estarttime == 900)
                 {
-                    if (flowLayoutPanel11.Controls.Count > 0)
+                    if (flowLayoutPanel11.Controls.Count > V)
                     {
                         MessageBox.Show("Two events cannot overlap. Please re-Schedule.", "Error: Overlapping Events", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -804,7 +806,7 @@ namespace SoftEngProj
                 }
                 else if (Estarttime == 1000)
                 {
-                    if (flowLayoutPanel12.Controls.Count > 0)
+                    if (flowLayoutPanel12.Controls.Count > V)
                     {
                         MessageBox.Show("Two events cannot overlap. Please re-Schedule.", "Error: Overlapping Events", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -815,7 +817,7 @@ namespace SoftEngProj
                 }
                 else if (Estarttime == 1100)
                 {
-                    if (flowLayoutPanel13.Controls.Count > 0)
+                    if (flowLayoutPanel13.Controls.Count > V)
                     {
                         MessageBox.Show("Two events cannot overlap. Please re-Schedule.", "Error: Overlapping Events", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -826,7 +828,7 @@ namespace SoftEngProj
                 }
                 else if (Estarttime == 1200)
                 {
-                    if (flowLayoutPanel14.Controls.Count > 0)
+                    if (flowLayoutPanel14.Controls.Count > V)
                     {
                         MessageBox.Show("Two events cannot overlap. Please re-Schedule.", "Error: Overlapping Events", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -837,7 +839,7 @@ namespace SoftEngProj
                 }
                 else if (Estarttime == 1300)
                 {
-                    if (flowLayoutPanel15.Controls.Count > 0)
+                    if (flowLayoutPanel15.Controls.Count > V)
                     {
                         MessageBox.Show("Two events cannot overlap. Please re-Schedule.", "Error: Overlapping Events", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -848,7 +850,7 @@ namespace SoftEngProj
                 }
                 else if (Estarttime == 1400)
                 {
-                    if (flowLayoutPanel16.Controls.Count > 0)
+                    if (flowLayoutPanel16.Controls.Count > V)
                     {
                         MessageBox.Show("Two events cannot overlap. Please re-Schedule.", "Error: Overlapping Events", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -859,7 +861,7 @@ namespace SoftEngProj
                 }
                 else if (Estarttime == 1500)
                 {
-                    if (flowLayoutPanel17.Controls.Count > 0)
+                    if (flowLayoutPanel17.Controls.Count > V)
                     {
                         MessageBox.Show("Two events cannot overlap. Please re-Schedule.", "Error: Overlapping Events", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -870,7 +872,7 @@ namespace SoftEngProj
                 }
                 else if (Estarttime == 1600)
                 {
-                    if (flowLayoutPanel18.Controls.Count > 0)
+                    if (flowLayoutPanel18.Controls.Count > V)
                     {
                         MessageBox.Show("Two events cannot overlap. Please re-Schedule.", "Error: Overlapping Events", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -881,7 +883,7 @@ namespace SoftEngProj
                 }
                 else if (Estarttime == 1700)
                 {
-                    if (flowLayoutPanel19.Controls.Count > 0)
+                    if (flowLayoutPanel19.Controls.Count > V)
                     {
                         MessageBox.Show("Two events cannot overlap. Please re-Schedule.", "Error: Overlapping Events", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -892,7 +894,7 @@ namespace SoftEngProj
                 }
                 else if (Estarttime == 1800)
                 {
-                    if (flowLayoutPanel20.Controls.Count > 0)
+                    if (flowLayoutPanel20.Controls.Count > V)
                     {
                         MessageBox.Show("Two events cannot overlap. Please re-Schedule.", "Error: Overlapping Events", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -903,7 +905,7 @@ namespace SoftEngProj
                 }
                 else if (Estarttime == 1900)
                 {
-                    if (flowLayoutPanel21.Controls.Count > 0)
+                    if (flowLayoutPanel21.Controls.Count > V)
                     {
                         MessageBox.Show("Two events cannot overlap. Please re-Schedule.", "Error: Overlapping Events", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -914,7 +916,7 @@ namespace SoftEngProj
                 }
                 else if (Estarttime == 2000)
                 {
-                    if (flowLayoutPanel22.Controls.Count > 0)
+                    if (flowLayoutPanel22.Controls.Count > V)
                     {
                         MessageBox.Show("Two events cannot overlap. Please re-Schedule.", "Error: Overlapping Events", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -925,7 +927,7 @@ namespace SoftEngProj
                 }
                 else if (Estarttime == 2100)
                 {
-                    if (flowLayoutPanel23.Controls.Count > 0)
+                    if (flowLayoutPanel23.Controls.Count > V)
                     {
                         MessageBox.Show("Two events cannot overlap. Please re-Schedule.", "Error: Overlapping Events", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -3688,7 +3690,7 @@ namespace SoftEngProj
 
         private void EventView_FormClosed(object sender, EventArgs e)
         {
-            //I can't do this anymore. Couldn't instal packages for notifications and get them to work. I quit. I never want to have to do this again.
+            //I can't do this anymore. Couldn't install packages for notifications and get them to work. I quit. I never want to have to do this again.
             //A small part of me wants to give up on a functioning adult life altogether. The prospect of being a shut-in sounds more appealing each minute I spend here.
         }
     }
